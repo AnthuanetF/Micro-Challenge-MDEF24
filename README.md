@@ -4,5 +4,5 @@ Micro Challenge MDEF24
 Anthu and Albert
 
 3
-![Alt text](quinoaq.jpg)
+![Alt text]()
 
