@@ -3,8 +3,6 @@
 
 #### By Anthuanet Falcon & Albert Vila :)
 
-
-
 This is the documentation of our exploration and reflection on our first micro challenge, based on our inspiration drawn from Albert and Anthu. It is rooted in the search for new ways to understand the language of nature and its expression within the environment
 
 #### *Secret Languages : Frecuencys and Vibrations 
@@ -18,7 +16,7 @@ In this initial exploration, we chose to focus on vibrations and frequencies, dr
 *Cymatics is the science that studies the graphic representation of sound, and it emerged by attributing a creative meaning to sound.*
 
 Who is Ernst Chladni
-![image](https://hackmd.io/_uploads/H1Y-CAhip.png)
+![image](../Micro-Challenge-MDEF24/recursosMicrochallenge/agua.png)
 
 He was a German physicist known for his work on vibrations and the calculation of the speed of sound for different gases, and is considered the founder of acoustics. The geometric patterns that appear formed by fine layers of sand deposited on a glass or metal plate that is vibrated at different frequencies are called 'Chladni sound figures.
 
