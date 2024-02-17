@@ -3,9 +3,9 @@
 
 #### By Anthuanet Falcon & Albert Vila :)
 
-This is the documentation of our exploration and reflection on our first micro challenge, based on our inspiration drawn from Albert and Anthu. It is rooted in the search for new ways to understand the language of nature and its expression within the environment
+This is the documentation of our exploration and reflection on our first micro challenge, based on our inspiration drawn from Albert and Anthu. It is rooted in the search for new ways to understand the language of nature and its expression within the environment.
 
-#### *Secret Languages : Frecuencys and Vibrations 
+#### *Secret Languages : Frecuencies and Vibrations 
 
 This idea emerges from the fusion of perspectives within the scientific, artistic, and technological realms, challenging current methods of research and exploration in the natural world. Our inspiration and curiosity to delve into the natural language through observation led us to understand that the language of our environment is often imperceptible to our human species. The reasons extend beyond the anthropocentric mindset and include physiological factors.
 
