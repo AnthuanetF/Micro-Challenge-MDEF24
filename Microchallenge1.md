@@ -27,13 +27,14 @@ make natural patterns not consciously perceptible by humans apparent to improve 
 Create a system capable of capturing different data from the nature (sound, image, frequency, vibrations...) and physically represent it in patterns that in turn feed back to the system (ai)
 
 Original sketch:
+
 ![Original sketch](/recursosMicrochallenge/images/OriginalSketch.png)
 
 
 Final flowchart of the whole project after being debugged:
 ![Debbuged sketch](/recursosMicrochallenge/images/Microchallenge.JPG)
 
-# MicroChallenge 1: Secret Languages. It is possible to see the frecuencies and vibrations?
+# MicroChallenge 1: It is possible to see the frecuencies and vibrations?
 
 This idea emerges from the fusion of perspectives within the scientific, artistic, and technological realms, challenging current methods of research and exploration in the natural world. Our inspiration and curiosity to delve into the natural language through observation led us to understand that the language of our environment is often imperceptible to our human species. The reasons extend beyond the anthropocentric mindset and include physiological factors.
 
@@ -45,7 +46,9 @@ In this initial exploration, we chose to focus on vibrations and frequencies, dr
 *Cymatics is the science that studies the graphic representation of sound, and it emerged by attributing a creative meaning to sound.*
 
 **Who is Ernst Chladni?**
-![Ernest Chladni](/recursosMicrochallenge/images/ErnestChladni.png)
+![Ernest Chadni](/recursosMicrochallenge/images/ErnestChladni.png)
+
+
 
 He was a German physicist known for his work on vibrations and the calculation of the speed of sound for different gases, and is considered the founder of acoustics. The geometric patterns that appear formed by fine layers of sand deposited on a glass or metal plate that is vibrated at different frequencies are called 'Chladni sound figures.
 https://en.wikipedia.org/wiki/Ernst_Chladni
@@ -64,7 +67,7 @@ https://nigelstanford.com/Cymatics/?s=youtube&p=Cytext
 
  We also explored various ways to create our own Chladni plate, starting from low-tech, which was our initial intention, and later incorporating electronic elements. Here are our reference, Make you own Chladni Plate! 
  
- ##### Links:
+#### Links:
 https://www.youtube.com/watch?v=hKmPc0Q0kKg
 https://demos.smu.ca/index.php/demos/waves/104-chladni-patterns
 https://americanhistory.si.edu/science/chladni.htm
@@ -295,4 +298,6 @@ Clap Clap
 
 
 
-# THANKS TO MICROCHALLENGE SUPPORTING TEAM AND TO THE CLASSEMATES, ESPECIALLY FLORA AND MANUJA FOR THE ANNOYING SOUNDS!!!!!!!!!!
+# Thanks to microchallenge supporting team and to the classemates, especially Flora and Manuja for the annoying sounds!!!!!!!!!!
+
+
