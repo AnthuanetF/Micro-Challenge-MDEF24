@@ -36,6 +36,8 @@ Final flowchart of the whole project after being debugged:
 
 # MicroChallenge 1: It is possible to see the frecuencies and vibrations?
 
+## Introduction Microchallente 1
+
 This idea emerges from the fusion of perspectives within the scientific, artistic, and technological realms, challenging current methods of research and exploration in the natural world. Our inspiration and curiosity to delve into the natural language through observation led us to understand that the language of our environment is often imperceptible to our human species. The reasons extend beyond the anthropocentric mindset and include physiological factors.
 
 ### Patterns Visible and Invisible
@@ -43,15 +45,11 @@ When we speak of the languages of nature, we refer to the fusion of the visible 
 
 In this initial exploration, we chose to focus on vibrations and frequencies, drawing inspiration from the study of Cymatics* through the Chladni plate.
  
-*Cymatics is the science that studies the graphic representation of sound, and it emerged by attributing a creative meaning to sound.*
+**Cymatics is the science that studies the graphic representation of sound, and it emerged by attributing a creative meaning to sound.*
 
-**Who is Ernst Chladni?**
-![Ernest Chadni](/recursosMicrochallenge/images/ErnestChladni.png)
-
-
-
-He was a German physicist known for his work on vibrations and the calculation of the speed of sound for different gases, and is considered the founder of acoustics. The geometric patterns that appear formed by fine layers of sand deposited on a glass or metal plate that is vibrated at different frequencies are called 'Chladni sound figures.
-https://en.wikipedia.org/wiki/Ernst_Chladni
+| Who is Ernest Chladni? | ___________________ |
+| --- | --- |
+| He was a German physicist known for his work on vibrations and the calculation of the speed of sound for different gases, and is considered the founder of acoustics. The geometric patterns that appear formed by fine layers of sand deposited on a glass or metal plate that is vibrated at different frequencies are called 'Chladni sound figures.| ![Ernest Chadni](/recursosMicrochallenge/images/ErnestChladni.png) |
 
 
 ### Our References : Links, papers, videos....
@@ -75,7 +73,8 @@ https://sciencedemonstrations.fas.harvard.edu/presentations/chladni-plates
 https://j-rosas.github.io/mdef/project/project/
 https://skullsinthestars.com/2013/05/02/physics-demonstrations-chladni-patterns/
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/wvJAgrUBF4w?si=zTI5gHGk0Suopgot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/wvJAgrUBF4w?si=q4oz089cM_jk_HJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## Propose (What is supposed to do or not to do in this 1st Micro challenge)
 
@@ -93,39 +92,46 @@ Coverage of the first microchallenge in the global project:
 ![Debbuged sketch](/recursosMicrochallenge/images/ElementsArtifact.JPG)
 
 
+### Planning
+![Planning](/recursosMicrochallenge/images/Planning.png)
 
-## Planning
-![image](https://hackmd.io/_uploads/Sy6X-epj6.png)
+### Final logbook
 
-
-
-# INPUTS
-
-For this microchallenge 1 we have decided to focus on the outputs using our own inputs so we have  left the data capture for another challenge.
-
-After some tests with music we decided to download some pure frequencies and create tracks of 1 minute each. We used the https://onlinetonegenerator.com/ to create pure sine frequencies of the desired frequencies. 
-
-![image](https://hackmd.io/_uploads/By-7Gx6ip.png)
-
-After some tests with the balloon-speaker we added some low frequencies (10,20,40,50)
+| Day 1 | Day 2 | Day 3 | Day 4 |
+| --- | --- |--- | --- |
+| Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
 
 
-# PROCESSING SYSTEM
-
-## ELECTRONICS FOR TESTING OUR OUTPUTS
-
-For provide the sound/vibrations to our different outputs we have use a DF Player that is a module that provides a integrated MP3 player with a minisd card
-
-## DF Player datasheet
-
-![image](https://hackmd.io/_uploads/ByIqMeajp.png)
 
 
-Download the whole datasheet: [https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer Mini Manual.pdf](https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer%20Mini%20Manual.pdf)
+## INPUTS
+
+For this microchallenge 1 we have decided to focus on the outputs using our own inputs so we have left the data capture and the feedback system for another challenges.
+
+After some tests with music and different type of sound we decided to download some pure frequencies and create tracks of 1 minute each. We used the https://onlinetonegenerator.com/ to create pure sine frequencies of the desired frequencies. 
+
+Since the tracks downloaded from onlinegenerator.com are 15 seconds long, we used the Audacity software to create 60-second tracks.
+
+![Working on inputs](/recursosMicrochallenge/images/generatingSoundTracks.png)
+
+After some tests with the balloon-speaker we added some low frequencies (10 Hz, 20 Hz, 40 Hz, and 50 Hz) tto those we had found in the bibliography for the squared Chladni plate paterns (68 Hz,80 Hz, 176 Hz, 250 Hz, 300 Hz), 382 Hz, 477 Hz, 735 Hz, 1071 Hz, 2250 Hz and 3258 Hz)
+
+[Download tracks](/recursosMicrochallenge/documents/InputFreq.zip)
+
+## PROCESSING SYSTEM
+
+### ELECTRONICS FOR TESTING OUR OUTPUTS
+
+For provide the sound/vibrations to our different outputs we have used a DF Player that is a module that provides a integrated MP3 player with a miniSD card
+
+![DFPlayer](/recursosMicrochallenge/images/DFPlayerMini_DataSheet.png)
+
+
+DF Player datasheet: [https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer Mini Manual.pdf](https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer%20Mini%20Manual.pdf)
 
 The configuration we used the following diagram that works without any coding.
 
-![image](https://hackmd.io/_uploads/ry1TGgasT.png)
+![DFPlayer Circuit](/recursosMicrochallenge/images/DfPlayerCircuit.png)
 
 # OUTPUTS
 
