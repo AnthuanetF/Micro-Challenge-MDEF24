@@ -102,8 +102,6 @@ Coverage of the first microchallenge in the global project:
 | Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
 
 
-
-
 ## INPUTS
 
 For this microchallenge 1 we have decided to focus on the outputs using our own inputs so we have left the data capture and the feedback system for another challenges.
@@ -120,7 +118,7 @@ After some tests with the balloon-speaker we added some low frequencies (10 Hz, 
 
 ## PROCESSING SYSTEM
 
-### ELECTRONICS FOR TESTING OUR OUTPUTS
+### Electronics for testing our input frequencies
 
 For provide the sound/vibrations to our different outputs we have used a DF Player that is a module that provides a integrated MP3 player with a miniSD card
 
@@ -133,16 +131,13 @@ The configuration we used the following diagram that works without any coding.
 
 ![DFPlayer Circuit](/recursosMicrochallenge/images/DfPlayerCircuit.png)
 
-# OUTPUTS
+## OUTPUTS
 
-In order to explore diferent visualizations and the limits of each one we have worked in 3 different outputs. The Chladni plate, a vibrating ballon membrane and a laser balloon. After the first iterations with the first output we decided to made some variations.
+In order to explore diferent visualizations and the limits of each one we have worked in 3 different outputs. The Chladni plate (output 1), a laser balloon (output 2) and a vibrating ballon membrane (output 3). After the first iterations and test with the Chladni plate we decided to made some variations.
 
 ## Output 1: Chladni plate
 
-![image](https://hackmd.io/_uploads/ByDWXgai6.png)
-![image](https://hackmd.io/_uploads/HkWzQx6oT.png)
-![image](https://hackmd.io/_uploads/HJyXXxTj6.png)
-![image](https://hackmd.io/_uploads/BJiREe6j6.png)
+![Chladni plate](/recursosMicrochallenge/images/ChladniPlateInstallation.png)
 
 
 
@@ -150,19 +145,13 @@ In order to explore diferent visualizations and the limits of each one we have w
 ### Explorations with
 ![image](https://hackmd.io/_uploads/Sk2woeTj6.png)
 
-
 ![image](https://hackmd.io/_uploads/Sk0DyZTip.png)
 
 ![image](https://hackmd.io/_uploads/S12BU-poT.png)
 
 ![image](https://hackmd.io/_uploads/H1o5I-aj6.png)
+
 ![image](https://hackmd.io/_uploads/rJ4R8bpop.png)
-
-
-
-
-
-
 
 
 
