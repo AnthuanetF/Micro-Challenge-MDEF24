@@ -52,7 +52,7 @@ In this initial exploration, we chose to focus on vibrations and frequencies, dr
 | He was a German physicist known for his work on vibrations and the calculation of the speed of sound for different gases, and is considered the founder of acoustics. The geometric patterns that appear formed by fine layers of sand deposited on a glass or metal plate that is vibrated at different frequencies are called 'Chladni sound figures.| ![Ernest Chadni](/recursosMicrochallenge/images/ErnestChladni.png) |
 
 
-#### Initial References : Links, papers, videos....
+#### Initial References and Inspirations
 
 One of our initial references is the artist *Nigel John Stanford*, who explores Cymatics by creating interactive systems between vibrations, percussion instruments, frequencies, etc., and various elements such as water, salt, sand, and fire.
 
@@ -149,7 +149,6 @@ Based on:
 
 ![Chladni plate parts](/recursosMicrochallenge/images/ChladniPlateParts.JPG)
 
-
 Download files:
 - [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
 - [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateAcrylycGuidePlate.dxf)
@@ -169,12 +168,17 @@ https://youtube.com/shorts/H6Db8r2LYrQ?si=xwOUFDiAWokbY-sZ
 
 After many tests, we can say that our Chladni dish could not create the expected patterns. After different tests with materials and with different types of plates, we see that the vibration transmission must be improved in some way. Maybe increasing the power with an amplifier or rebuilding the mechanical transmission system.
 
-## OUTPUT 2: Vibrating balloon
+## Output 2: Vibrating balloon
 
-Coming soon
-![image](https://hackmd.io/_uploads/SyDfUlToa.png)
+After our unexpected results with the patterns on the Chladni plate we decided to directly put a membrane, made with a balloon, on a speaker and test the behavior of the materials on it.
 
-![image](https://hackmd.io/_uploads/BJ7VYeTjp.png)
+![Vibrating balloon](/recursosMicrochallenge/images/VibratingSpeakerBalloon.png)
+
+To build it, just cut a balloon and place it tightly over a speaker.
+
+![Vibrating balloon](/recursosMicrochallenge/images/Curcuma.png)
+
+This time the results surprised us when we checked the response of the materials and the behavior of the membrane at different frequencies.
 
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/piy7QXYmkRE?si=SlqT0uQj8C8COIzP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
