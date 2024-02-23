@@ -9,10 +9,10 @@ This is the documentation of our exploration and reflection on our first micro c
 
 
 ### Project aligment
+
 During the initial phase of getting to know each other and brainstorming we found many shared interests. We decided to take our time in this initial phase as it was important to bring out future learning interests as well as the essential elements of our design space to see where we would both feel most comfortable. It was also important to see how the development of the challenge was going to contribute and enrich the respective final personal projects. This time was worth it as we designed a more ambitious project to work on beyond the first challenge. We both felt comfortable working and we learned a lot of things.
 
 ![Shared interests](/recursosMicrochallenge/images/SharedInterests.JPG)
-
 
 ### Conception phase
 
@@ -27,13 +27,16 @@ This idea emerges from the fusion of perspectives within the scientific, artisti
 When we speak of the languages of nature, we refer to the fusion of the visible and the invisible. Among natural patterns, we highlight fractals, spirals, tessellations, and symmetrical shapes commonly observed in leaves, shells, animal skins, and geological formations. These are shaped by languages invisible to humans, such as frequencies, waves, vibrations, microwaves, energy, heat, etc.
 
 
-**Artifact description:**
+**Artifact description**
+
 Create a system capable of capturing different data from the nature (sound, image, frequency, vibrations...) and physically represent it in patterns that in turn feed back to the system (ai)
 
-**First sketch:**
+**First sketch**
+
 ![Original sketch](/recursosMicrochallenge/images/OriginalSketch.png)
 
-**Final flowchart of the whole project:**
+**Final flowchart of the whole project**
+
 ![Debbuged sketch](/recursosMicrochallenge/images/Microchallenge.JPG)
 
 
