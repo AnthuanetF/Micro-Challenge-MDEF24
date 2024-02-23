@@ -149,10 +149,13 @@ Based on:
 
 ![Chladni plate parts](/recursosMicrochallenge/images/ChladniPlateParts.JPG)
 
-Download files:
+Files:
 - [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
 - [Download acrylin guide plate file](/recursosMicrochallenge/documents/ChladniPlateAcrylycGuidePlate.dxf)
-- [Download 3D transmission cylinder](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
+- [Download 3D transmission cylinder](/recursosMicrochallenge/documents/TransmissionCylinder.3dm)
+
+![TransmissionCylinder](/recursosMicrochallenge/images/TransmissionCylinderCompo.JPG)
+
 
 
 ### Testing materials with Chladni plate
