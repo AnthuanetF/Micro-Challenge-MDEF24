@@ -5,10 +5,10 @@
 
 ## Frequency events _ exp1 (16/02/24)
 
-This is the documentation of our exploration and reflection on our first micro challenge, based on our inspiration drawn from Albert and Anthu. It is rooted in the search for new ways to understand the languages of nature and its expression within the environment.
+This is the documentation of our exploration and reflection on our first microchallenge, based on our inspiration drawn from Albert and Anthu. It is rooted in the search for new ways to understand the languages of nature and its expression within the environment.
 
 
-### Project aligment
+### Project alignment
 
 During the initial phase of getting to know each other and brainstorming we found many shared interests. We decided to take our time in this initial phase as it was important to bring out future learning interests as well as the essential elements of our design space to see where we would both feel most comfortable. It was also important to see how the development of the challenge was going to contribute and enrich the respective final personal projects. This time was worth it as we designed a more ambitious project to work on beyond the first challenge. We both felt comfortable working and we learned a lot of things.
 
@@ -72,6 +72,10 @@ One of our initial references is the artist *Nigel John Stanford*, who explores 
 - https://sciencedemonstrations.fas.harvard.edu/presentations/chladni-plates  
 - https://j-rosas.github.io/mdef/project/project/
 - https://skullsinthestars.com/2013/05/02/-physics-demonstrations-chladni-patterns/
+- https://www.youtube.com/watch?v=NU9aeHLmD-Q
+- https://www.youtube.com/watch?v=s3hoYqQaVsc
+- https://www.youtube.com/watch?v=rjueHI002Fg
+
 
 [![Chladni plate video](/recursosMicrochallenge/images/YoutubeChladniPlate.JPG)](https://www.youtube.com/watch?v=wvJAgrUBF4w)
 
@@ -92,11 +96,11 @@ Coverage of the first microchallenge in the global project:
 
 
 
-### Elements of the artifact
+## 3. Elements of the artifact
 
 ![Debbuged sketch](/recursosMicrochallenge/images/ElementsArtifact.JPG)
 
-## Artifact elements 1: Inputs
+## 3.1. Artifact elements 1: Inputs
 
 Due to the time limitation to execute the project we have decided to focus on the outputs using our own inputs so we have left the data capture and the feedback system for another challenges.
 
@@ -110,7 +114,7 @@ After some tests with the balloon-speaker we added some low frequencies (10 Hz, 
 
 [Download tracks](/recursosMicrochallenge/documents/InputFreq.zip)
 
-## Artifact elements 2: Processing system
+## 3.2. Artifact elements 2: Processing system
 
 ### Electronics for testing our input frequencies and send it to the vibration outputs
 
@@ -130,8 +134,9 @@ The configuration we used the following diagram that works without any coding.
 
 To facilitate testing, connections and disconnections of the different outputs, we soldered some 3.5 jacks to the output of the circuit and to the input of the speakers.
 
+![working on electronics](/recursosMicrochallenge/images/electronicscomp.JPG)
 
-## Artifact elements 2: Outputs
+## 3.3. Artifact elements 2: Outputs
 
 In order to explore diferent visualizations and the limits of each one we have worked in 3 different outputs. The Chladni plate (output 1), a laser balloon (output 2) and a vibrating ballon membrane (output 3). After the first iterations and test with the Chladni plate we decided to made some variations.
 
@@ -186,10 +191,18 @@ This time the results surprised us when we checked the response of the materials
     
 ## Output 3: Laser balloon
 
+![Laser balloon](/recursosMicrochallenge/images/LaserBalloonTest2.jpg)
+
+
+Another easy way to see the sound is by projecting a laser onto the wall bounced by a mirror attached to a membrane (balloon) in front of a sound source (speaker). We did a quick test but didn't delve too deeply into this output.
+
 
 [![Laser balloon](/recursosMicrochallenge/images/YoutubeLaser.JPG)](https://www.youtube.com/watch?v=ce1N9NUwVu0&t)
 
-## Tools and materials:
+#### References:
+https://www.instructables.com/Laser-Pen-Sound-Visualiser/
+
+## 4. Tools and materials:
 
 ### Software:
 
@@ -253,14 +266,14 @@ This time the results surprised us when we checked the response of the materials
 - Laser diode 650nm Adafruit - [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1130/1054_Web.pdf)
 
 
-### Logbook (What we did, day by day)
+## 5. Logbook (What we did, day by day)
 
 | Day 1 | Day 2 | Day 3 | Day 4 |
 | --- | --- |--- | --- |
 | Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
 
 
-## Iteration process
+## 6. Iteration process
 - Imagine
 - Smell
 - Read
@@ -290,13 +303,13 @@ This time the results surprised us when we checked the response of the materials
 - Clap Clap 
 
 
-## Applications
+## 7. Applications
 
 After some experimentation, despite not obtaining optimal results, we come up with a multitude of possible applications of our learnings during the process.
 
 ![Aplications](/recursosMicrochallenge/images/Applications.JPG)
 
-## Conclusions and new ideas
+## 8. Conclusions and new ideas
 
 1. This is just the beginning​!
 2. It is worth taking your time to the alignment phase as it will influence the future of the entire project.
