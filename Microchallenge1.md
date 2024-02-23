@@ -42,7 +42,7 @@ Create a system capable of capturing different data from the nature (sound, imag
 
 # Microchallenge 1: It is possible to see the frecuencies and vibrations?
 
-## Introduction 
+## 1. Introduction 
 In this initial exploration, we chose to focus on vibrations and frequencies, drawing inspiration from the study of Cymatics* through the Chladni plate. 
  
 **Cymatics is the science that studies the graphic representation of sound, and it emerged by attributing a creative meaning to sound.*
@@ -73,10 +73,10 @@ One of our initial references is the artist *Nigel John Stanford*, who explores 
 - https://j-rosas.github.io/mdef/project/project/
 - https://skullsinthestars.com/2013/05/02/-physics-demonstrations-chladni-patterns/
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/wvJAgrUBF4w?si=q4oz089cM_jk_HJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Chladni plate video](/recursosMicrochallenge/images/YoutubeChladniPlate.JPG)](https://www.youtube.com/watch?v=wvJAgrUBF4w)
 
 
-## Propose (What is supposed to do or not to do in this 1st Micro challenge)
+## 2. Our proposal for microchallenge 1
 
 During this stage, our goal is to create a data set of sounds to experiment with different frequencies. Subsequently, through our mentioned electronics, we aim to transfer these sounds/vibrations to our output systems (Chladni plate...), allowing us to analogically visualize the patterns that are generated when using different materials (water, seeds...)
 
@@ -87,19 +87,12 @@ Coverage of the first microchallenge in the global project:
 ![Micro-Challenge 1 Coverage](/recursosMicrochallenge/images/Microchallenge1_flowchart.JPG)
 
 
-
-
 ### Planning
 ![Planning](/recursosMicrochallenge/images/Planning.png)
 
-### Logbook (What we did, day by day)
-
-| Day 1 | Day 2 | Day 3 | Day 4 |
-| --- | --- |--- | --- |
-| Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
 
 
-## Elements of the artifact
+### Elements of the artifact
 
 ![Debbuged sketch](/recursosMicrochallenge/images/ElementsArtifact.JPG)
 
@@ -122,6 +115,8 @@ After some tests with the balloon-speaker we added some low frequencies (10 Hz, 
 ### Electronics for testing our input frequencies and send it to the vibration outputs
 
 For provide the sound/vibrations to our different outputs we have used a DF Player that is a module that provides a integrated MP3 player with a miniSD card
+
+![Our Circuit](/recursosMicrochallenge/images/electronics.JPG)
 
 ![DFPlayer](/recursosMicrochallenge/images/DFPlayerMini_DataSheet.png)
 
@@ -151,11 +146,13 @@ Based on:
 
 Download files:
 - [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
-- [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateAcrylycGuidePlate.dxf)
+- [Download acrylin guide plate file](/recursosMicrochallenge/documents/ChladniPlateAcrylycGuidePlate.dxf)
 - [Download 3D transmission cylinder](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
 
 
 ### Testing materials with Chladni plate
+
+![Testing](/recursosMicrochallenge/images/Testing.JPG)
 
 ![Testing materials](/recursosMicrochallenge/images/TestingMaterials.JPG)
 
@@ -180,14 +177,17 @@ To build it, just cut a balloon and place it tightly over a speaker.
 
 This time the results surprised us when we checked the response of the materials and the behavior of the membrane at different frequencies.
 
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/piy7QXYmkRE?si=SlqT0uQj8C8COIzP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/LXKKkXhzJP8?si=zKxgiYKDFa0LpzoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![TestingVibratingBalloon](/recursosMicrochallenge/images/YoutubeCurcuma.JPG)](https://www.youtube.com/watch?v=piy7QXYmkRE)
+
+
+[![TestingVibratingBalloon2](/recursosMicrochallenge/images/YoutubeChia.JPG)](https://www.youtube.com/watch?v=LXKKkXhzJP8&t)
+
     
-## Output 3: Laser ballon
+## Output 3: Laser balloon
 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ce1N9NUwVu0?si=L4jgd1y0QbyMCqRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Laser balloon](/recursosMicrochallenge/images/YoutubeLaser.JPG)](https://www.youtube.com/watch?v=ce1N9NUwVu0&t)
 
 ## Tools and materials:
 
@@ -218,7 +218,7 @@ This time the results surprised us when we checked the response of the materials
 | Files, rasp, sanding paper | Wires |
 | Wrench | Ensamble chladni plate |
 
-![image](/recursosMicrochallenge/images/FabLabWorkshop.png)
+![Workshop](/recursosMicrochallenge/images/FabLabWorkshop.png)
 
 ### Materials:
 | Name | Use |
@@ -253,6 +253,13 @@ This time the results surprised us when we checked the response of the materials
 - Laser diode 650nm Adafruit - [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1130/1054_Web.pdf)
 
 
+### Logbook (What we did, day by day)
+
+| Day 1 | Day 2 | Day 3 | Day 4 |
+| --- | --- |--- | --- |
+| Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
+
+
 ## Iteration process
 - Imagine
 - Smell
@@ -282,6 +289,12 @@ This time the results surprised us when we checked the response of the materials
 - Repository? jooo
 - Clap Clap 
 
+
+## Applications
+
+After some experimentation, despite not obtaining optimal results, we come up with a multitude of possible applications of our learnings during the process.
+
+![Aplications](/recursosMicrochallenge/images/Applications.JPG)
 
 ## Conclusions and new ideas
 
