@@ -1,25 +1,26 @@
 #    Nature patterns: Secret Languages
 *By [Anthuanet Falcon](https://anthuanetf.github.io/MDEF/) & [Albert Vila](https://avilabon.github.io/MDEF_Albert/)* :)
 
-# Microchallenge 2: Frequencies to images 
+# Microchallenge 2: Vibrations 2
 
 ## 1. Introduction 
 
-#### References and Inspirations
+#### References
+
+[Teacheable machine](https://teachablemachine.withgoogle.com/)
 
 ## 2. Our proposal for microchallenge 2
 
-??? 'quote' Microchallenge 1 proposal'
+Microchallenge 1 proposal:
     During this stage, our goal is to create a data set of sounds to experiment with different frequencies. Subsequently, through our mentioned electronics, we aim to transfer these sounds/vibrations to our output systems (Chladni plate...), allowing us to analogically visualize the patterns that are generated when using different materials (water, seeds...)
 
-This exploration holds aspirations to further develop in the upcoming challenge, incorporating ideas involving machine learning and the exploration of additional elements.
 
-The objective for this microchallenge is to take Microchallenge 1 one step further (see microchallenge 1).
+The objective for this microchallenge is to take Microchallenge 1 one step further (see microchallenge 1) by incorporating machine learning and exploration of additional inputs as human body frequencies.
 
 The first step was to fix the Chladni Plate that we built during Microchallenge 1 since it was not going well. Thanks to previous experience and especially past mistakes, we have completely rebuilt the Chladni Plate but this time much faster.
 
 
-Coverage of the first microchallenge in the global project:
+Coverage of the second microchallenge in the global project:
 ![Micro-Challenge 1 Coverage](/recursosMicrochallenge/images/Microchallenge1_flowchart.JPG)
 
 
