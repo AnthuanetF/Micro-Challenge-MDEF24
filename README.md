@@ -3,3 +3,4 @@
 
 Go to:
 - [Microchallenge 1](Microchallenge1.md)
+- [Microchallenge 2](Microchallenge2.md)
