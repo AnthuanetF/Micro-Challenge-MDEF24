@@ -5,9 +5,7 @@
 
 ## 1. Introduction 
 
-#### References
 
-[Teacheable machine](https://teachablemachine.withgoogle.com/)
 
 ## 2. Our proposal for microchallenge 2
 
@@ -27,9 +25,11 @@ Coverage of the second microchallenge in the global project:
 ### Planning
 ![Planning](/recursosMicrochallenge/images/Planning.png)
 
+#### References
 
+[Teacheable machine](https://teachablemachine.withgoogle.com/)
 
-## 3. Elements of the artifact
+## 3. The artifact
 
 ![Debbuged sketch](/recursosMicrochallenge/images/ElementsArtifact.JPG)
 
@@ -71,69 +71,21 @@ To facilitate testing, connections and disconnections of the different outputs, 
 
 ## 3.3. Artifact elements 2: Outputs
 
-In order to explore diferent visualizations and the limits of each one we have worked in 3 different outputs. The Chladni plate (output 1), a laser balloon (output 2) and a vibrating ballon membrane (output 3). After the first iterations and test with the Chladni plate we decided to made some variations.
+### Output 1: Chladni plate 2.0.
 
-### Output 1: Chladni plate
-
-![Chladni plate](/recursosMicrochallenge/images/ChladniPlateInstallation.png)
-
-Based on:
-[Weekend Projects by Make: makezine.com. Visualizing Sound with a Chladni Plate](https://www.youtube.com/watch?v=hKmPc0Q0kKg)
-
-![Chladni plate parts](/recursosMicrochallenge/images/ChladniPlateParts.JPG)
+![Chladni plate2]Image
+Fofo del nou Chladni Plate
 
 Files:
-- [Download plywood base file](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
-- [Download acrylin guide plate file](/recursosMicrochallenge/documents/ChladniPlateAcrylycGuidePlate.dxf)
-- [Download 3D transmission cylinder](/recursosMicrochallenge/documents/TransmissionCylinder.3dm)
+- [Download plywood guide 2.0](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
 
-![TransmissionCylinder](/recursosMicrochallenge/images/TransmissionCylinderCompo.JPG)
+- [Download 3D transmission cylinder 2.0](/recursosMicrochallenge/documents/TransmissionCylinder.3dm)
 
 
 
-### Testing materials with Chladni plate
-
-![Testing](/recursosMicrochallenge/images/Testing.JPG)
-
-![Testing materials](/recursosMicrochallenge/images/TestingMaterials.JPG)
-
-Chia test:
-https://youtube.com/shorts/J9iZFGCwMyE?si=WQfpxST9LSwg6h7_
-
-Water test
-https://youtube.com/shorts/H6Db8r2LYrQ?si=xwOUFDiAWokbY-sZ
+### Training a model using a Chladni plate patterns
 
 
-After many tests, we can say that our Chladni dish could not create the expected patterns. After different tests with materials and with different types of plates, we see that the vibration transmission must be improved in some way. Maybe increasing the power with an amplifier or rebuilding the mechanical transmission system.
-
-## Output 2: Vibrating balloon
-
-After our unexpected results with the patterns on the Chladni plate we decided to directly put a membrane, made with a balloon, on a speaker and test the behavior of the materials on it.
-
-![Vibrating balloon](/recursosMicrochallenge/images/VibratingSpeakerBalloon.png)
-
-To build it, just cut a balloon and place it tightly over a speaker.
-
-![Vibrating balloon](/recursosMicrochallenge/images/Curcuma.png)
-
-This time the results surprised us when we checked the response of the materials and the behavior of the membrane at different frequencies.
-
-
-[![TestingVibratingBalloon](/recursosMicrochallenge/images/YoutubeCurcuma.JPG)](https://www.youtube.com/watch?v=piy7QXYmkRE)
-
-
-[![TestingVibratingBalloon2](/recursosMicrochallenge/images/YoutubeChia.JPG)](https://www.youtube.com/watch?v=LXKKkXhzJP8&t)
-
-    
-## Output 3: Laser balloon
-
-![Laser balloon](/recursosMicrochallenge/images/LaserBalloonTest2.jpg)
-
-
-Another easy way to see the sound is by projecting a laser onto the wall bounced by a mirror attached to a membrane (balloon) in front of a sound source (speaker). We did a quick test but didn't delve too deeply into this output.
-
-
-[![Laser balloon](/recursosMicrochallenge/images/YoutubeLaser.JPG)](https://www.youtube.com/watch?v=ce1N9NUwVu0&t)
 
 #### References:
 https://www.instructables.com/Laser-Pen-Sound-Visualiser/
