@@ -161,6 +161,110 @@ https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 | Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
 
 
+
+Provisional code. 
+```
+//Define DFPlayer libraries
+#include "Arduino.h"
+#include <DFRobotDFPlayerMini.h>
+#include <SoftwareSerial.h>
+//SoftwareSerial mySerial(RX_PIN, TX_PIN);
+SoftwareSerial mySerial(10, 11);  // RX, TX
+
+
+// Create a SoftwareSerial object to communicate with the DFPlayer Mini
+
+// Create a DFRobotDFPlayerMini object to control the DFPlayer Mini
+DFRobotDFPlayerMini myDFPlayer;
+
+//Define DFPlayer libraries
+const int knockSensor = 1;  // the piezo is connected to analog pin 0
+const int threshold = 100;  // threshold value to decide when the detected sound is a knock or not
+int beat = 0;
+int ppm = 0;
+
+int startMillis;  //some global variables available anywhere in the program
+int currentMillis;
+const int period = 15000;  //the value is a number of milliseconds ()
+
+// these variables will change:
+int sensorReading = 0;  // variable to store the value read from the sensor pin
+
+void setup() {
+  //Serial.begin(9600);      // use the serial port
+  startMillis = millis();  //initial start time
+
+  // Initialize the DFPlayer Mini object
+  if (!myDFPlayer.begin(mySerial)) {
+    Serial.println(F("Unable to begin:"));
+    Serial.println(F("1.Please recheck the connection!"));
+    Serial.println(F("2.Please insert the SD card!"));
+    while (true)
+      ;
+  } else {
+    Serial.println(F("DFPlayer Mini online."));
+  }
+
+  // Set the volume (0 to 30)
+  myDFPlayer.volume(25);
+
+  // Play track 001 from the SD card
+  // myDFPlayer.play(1);
+}
+
+
+void loop() {
+
+  currentMillis = millis();
+  int timeElapsed = abs(currentMillis - startMillis);
+
+  if (timeElapsed <= period) {
+    // read the sensor and store it in the variable sensorReading:
+    sensorReading = analogRead(knockSensor);
+
+    // if the sensor reading is greater than the threshold:
+    if (sensorReading >= threshold) {
+      // send the string "Knock!" back to the computer, followed by newline
+      beat = beat + 1;
+      Serial.print("Total beat: ");
+      delay(100);
+      Serial.println(beat);
+    }
+    Serial.println(timeElapsed);
+    delay(100);  // delay to avoid overloading the serial port buffer}
+  } else {
+    ppm = beat * 4;
+    Serial.print("Pulsaciones por minuto: ");
+    Serial.println(ppm);
+
+    if (ppm < 60) {
+      myDFPlayer.play(1); // k = (100.mp3);
+    } else if ((ppm >= 60) && (ppm < 64)) {
+      myDFPlayer.play(2);  // = (200.mp3);
+    } else if ((ppm >= 64) && (ppm < 70)) {
+      myDFPlayer.play(3);  // =(350.mp3);
+    } else if ((ppm >= 70) && (ppm < 74)) {
+      myDFPlayer.play(4);  // = (430.mp3);
+    } else if ((ppm >= 74) && (ppm < 79)) {
+      myDFPlayer.play(5);  //= (460.mp3);
+    } else if ((ppm >= 79) && (ppm < 85)) {
+      myDFPlayer.play(6);  // = (490.mp3);
+    } else if ((ppm >= 85) && (ppm < 91)) {
+      myDFPlayer.play(7); //= (800.mp3);
+    } else if ((ppm >= 91) && (ppm < 100)) {
+      myDFPlayer.play(8); //= (1000.mp3);
+    } else if (ppm >= 100) {
+      myDFPlayer.play(9); //= (1300.mp3);
+    } else {
+      Serial.println("There is an error! Reset the system!");
+      //delay(150);
+    }
+  }
+  //Serial.println("Reset me to go again!");
+}
+```
+
+
 ## 6. Iteration process
 - Imagine
 - Smell
@@ -191,6 +295,21 @@ https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 - Clap Clap 
 
 
+
+## The performance
+![The table](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/ClassesBPM.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
 ## 7. Applications
 
 After some experimentation, despite not obtaining optimal results, we come up with a multitude of possible applications of our learnings during the process.
@@ -210,8 +329,15 @@ After some experimentation, despite not obtaining optimal results, we come up wi
 7. We want still Explorer this systems and add more ideas , so see u in the second Challenge!!
 8. Hopefully that we can communicate with another "Living beings" using our system.(lol) :)))))))))
 9. I like work with Albert 
-10. I like work with Anthu
 
+
+
+
+## 9. References
+
+- [How to control your DFMini Player MP3 module with Arduino](https://www.dfrobot.com/blog-1462.html)
+
+- [Run Teacheable Machine model in an microcontroller](https://github.com/googlecreativelab/teachablemachine-community/blob/master/snippets/markdown/tiny_image/GettingStarted.md)
 
 
 ### Thanks to microchallenge supporting team and to the classemates, especially Flora and Manuja for the annoying sounds!!!!!!!!!!
