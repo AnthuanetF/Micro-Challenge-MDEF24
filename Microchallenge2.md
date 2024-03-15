@@ -1,11 +1,11 @@
 #    Nature patterns: Secret Languages
 *By [Anthuanet Falcon](https://anthuanetf.github.io/MDEF/) & [Albert Vila](https://avilabon.github.io/MDEF_Albert/)* :)
 
-# Microchallenge 2: Vibrations 2
+# Microchallenge 2: Dr. Chladni
 
 ## 1. Introduction 
 
-
+![DrChladniIntro](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/PortadaDrChladni.gif)
 
 ## 2. Our proposal for microchallenge 2
 
