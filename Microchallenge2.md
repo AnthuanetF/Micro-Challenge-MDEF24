@@ -1,4 +1,4 @@
-#    Nature patterns: Secret Languages
+#    Nature patterns: Secret Languages II
 *By [Anthuanet Falcon](https://anthuanetf.github.io/MDEF/) & [Albert Vila](https://avilabon.github.io/MDEF_Albert/)* :)
 
 # Microchallenge 2: Dr. Chladni
@@ -6,6 +6,9 @@
 ## 1. Introduction 
 
 ![DrChladniIntro](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/PortadaDrChladni.gif)
+
+This microchangenge is an improvement and evolution of [microchallenge 1](https://github.com/AnthuanetF/Micro-Challenge-MDEF24/blob/main/Microchallenge1.md). 
+
 
 ## 2. Our proposal for microchallenge 2
 
