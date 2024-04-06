@@ -5,7 +5,7 @@
 
 ## 1. Introduction 
 
-![DrChladniIntro](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/PortadaDrChladni.gif)
+![DrChladniIntro](/recursosMicrochallenge2/images/PortadaDrChladni.gif)
 
 This microchangenge is an improvement and evolution of [microchallenge 1](https://github.com/AnthuanetF/Micro-Challenge-MDEF24/blob/main/Microchallenge1.md). 
 
