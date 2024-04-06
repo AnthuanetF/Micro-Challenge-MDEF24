@@ -31,9 +31,8 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 
 
-## 3. The artifact
+## 3. The Chladni plate 2.0
 
-![Debbuged sketch](/recursosMicrochallenge/images/ElementsArtifact.JPG)
 
 ## 3.1. Artifact elements 1: Inputs
 
@@ -49,7 +48,7 @@ After some tests with the balloon-speaker we added some low frequencies (10 Hz, 
 
 [Download tracks](/recursosMicrochallenge/documents/InputFreq.zip)
 
-## 3.2. Artifact elements 2: Processing system
+## 3.2. Inside Chladni Plate
 
 ### Electronics for testing our input frequencies and send it to the vibration outputs
 
