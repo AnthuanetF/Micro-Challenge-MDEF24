@@ -7,7 +7,7 @@
 
 ![DrChladniIntro](/recursosMicrochallenge2/images/PortadaDrChladni.gif)
 
-This microchangenge is an improvement and evolution of [microchallenge 1](https://github.com/AnthuanetF/Micro-Challenge-MDEF24/blob/main/Microchallenge1.md). 
+This microchallenge is an improvement and evolution of [microchallenge 1](https://github.com/AnthuanetF/Micro-Challenge-MDEF24/blob/main/Microchallenge1.md). 
 
 
 ## 2. Our proposal for microchallenge 2
@@ -27,7 +27,7 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 
 ### Planning
-![Planning](/recursosMicrochallenge/images/Planning.png)
+![Planning](/recursosMicrochallenge2/images/Planning.JPG)
 
 #### References
 
@@ -110,8 +110,8 @@ https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 ### Digital fabrication machines:
  Name | Use |
 | --- | --- |
-| 3D printer Creality Ender-3 PRO | Transmission cylinder |
-| Rayjet 500 laser machine | Marking holes and cutting lines of the plywood base and cut acrylic guide plate |
+| 3D printer Creality Ender-3 PRO | Transmission cylinder, Dr. Chladni electronics box |
+| CNC Milling machine | Plywood guide plate |
 
 ### Power and hand tools:
 | Name | Use |
@@ -158,15 +158,8 @@ https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 - Laser diode 650nm Adafruit - [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1130/1054_Web.pdf)
 
 
-## 5. Logbook (What we did, day by day)
+### Provisional code:
 
-| Day 1 | Day 2 | Day 3 | Day 4 |
-| --- | --- |--- | --- |
-| Share interests - Design project - Assign priorities for microchallenge 1 - Start gathering materials | Design output 1, the Chladni Plate - Built output 1 - Documentation (videos, photos, notes) | Electronics of the system to run output 1 - Work on inputs - Test output 1 - Improve output 1 - Built and test output 2 - Improve electronics- Documentation | Improve inputs - Improve electronics - Test output 1 - Create output 3 - Test output 3 - Improve output 3 - Documentation |
-
-
-
-Provisional code. 
 ```
 //Define DFPlayer libraries
 #include "Arduino.h"
@@ -270,70 +263,20 @@ void loop() {
 
 
 ## 6. Iteration process
-- Imagine
-- Smell
-- Read
-- Create
-- Fail
-- Fail again
-- Take photos
-- Read
-- Imagine
-- Ask for help
-- ouch!
-- Smell
-- Try
-- Fail F@#$%&/!
-- Smell Anthu
-- Take pictures
-- Document
-- Fail xxxxxxxx
-- No pictures
-- Don't touch we have something
-- Reimagine
-- Where is every body!
-- uh our classmate are so cool!
-- finish thiis! 
-- Presentation in 5 minutes. Shit! Documenting!
-- Repository? jooo
-- Clap Clap 
 
 
 
-## The performance
+## 7. Applications. The performance
+
+![The performance](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
+
+
 ![The table](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/ClassesBPM.JPG)
 
-
-
-
-
-
-
-
-
-
-
-
-## 7. Applications
-
-After some experimentation, despite not obtaining optimal results, we come up with a multitude of possible applications of our learnings during the process.
-
-![Aplications](/recursosMicrochallenge/images/Applications.JPG)
 
 ## 8. Conclusions and new ideas
 
 1. This is just the beginning​!
-2. It is worth taking your time to the alignment phase as it will influence the future of the entire project.
- 
-2. Our intentions were ambitious, such as merging vibrations with water and laser.
-3. We want to begin interpreting the patterns in the next challenges
-4. When using sensors, interfaces or artifacts to translate signals the very nature, composition and shape of this “devices” affects the initial signal.
-5. We want to explore more with Water and Bio materials as well. 
-6. This type of micro challenges is a good way to learn but a little stressful.
-7. We want still Explorer this systems and add more ideas , so see u in the second Challenge!!
-8. Hopefully that we can communicate with another "Living beings" using our system.(lol) :)))))))))
-9. I like work with Albert 
-
 
 
 
@@ -344,6 +287,6 @@ After some experimentation, despite not obtaining optimal results, we come up wi
 - [Run Teacheable Machine model in an microcontroller](https://github.com/googlecreativelab/teachablemachine-community/blob/master/snippets/markdown/tiny_image/GettingStarted.md)
 
 
-### Thanks to microchallenge supporting team and to the classemates, especially Flora and Manuja for the annoying sounds!!!!!!!!!!
+### Thanks to microchallenge supporting team and to the classemates!!!!!!!!!!
 
 
