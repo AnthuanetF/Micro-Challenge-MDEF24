@@ -29,9 +29,7 @@ To be able to carry out everything planned for this challenge, the first step wa
 ### Planning
 ![Planning](/recursosMicrochallenge2/images/Planning.JPG)
 
-#### References
 
-[Teacheable machine](https://teachablemachine.withgoogle.com/)
 
 ## 3. The artifact
 
@@ -264,7 +262,15 @@ void loop() {
 
 ## 6. Iteration process
 
+We basically did the iterations during the Chladni Plate tests.
 
+At the level of materials, we test metal plates made of galvanized steel and aluminum of different sizes and thicknesses. Although for lower power systems it seems that the aluminum plates worked better, for our system the 32 x 32 cm galvanized steel plate was the one that gave us the best results.
+
+We also try different materials for drawing the pattern. The materials tested were: salt, bicarbonate powder, wood chips and fine sand painted green for decorative use. The material that worked best by far was fine sand. the
+
+Regarding the frequencies, we also carried out different tests to validate the optimal working range and vibration transmission of our system. For the final galvanized steel and sand plate configuration, the optimal ranges for pattern drawing were approximately 50 to 1500 Hz. It is observed that at certain low frequencies the system enters resonance and is unable to define the patterns well and quickly expels the materials out of the plate.
+
+Other factors that were taken into account were the intensity of the sound (db) and the waiting time for the pattern to be drawn. Due to time constraints, the data regarding these aspects was not taken, but after various tests we defined the modus operandi starting at low volumes and gains for each frequency change and with a progressive increase without reaching very high plate resonance levels and leaving operate the system between 20 and 40 seconds.
 
 ## 7. Applications. The performance
 
@@ -286,6 +292,7 @@ void loop() {
 
 - [Run Teacheable Machine model in an microcontroller](https://github.com/googlecreativelab/teachablemachine-community/blob/master/snippets/markdown/tiny_image/GettingStarted.md)
 
+- [Teacheable machine](https://teachablemachine.withgoogle.com/)
 
 ### Thanks to microchallenge supporting team and to the classemates!!!!!!!!!!
 
