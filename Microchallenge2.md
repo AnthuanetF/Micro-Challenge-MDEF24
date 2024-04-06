@@ -12,17 +12,21 @@ This microchangenge is an improvement and evolution of [microchallenge 1](https:
 
 ## 2. Our proposal for microchallenge 2
 
-Microchallenge 1 proposal:
-    During this stage, our goal is to create a data set of sounds to experiment with different frequencies. Subsequently, through our mentioned electronics, we aim to transfer these sounds/vibrations to our output systems (Chladni plate...), allowing us to analogically visualize the patterns that are generated when using different materials (water, seeds...)
+??? info "Microchallenge 1 proposal:"
+  During this stage, our goal is to create a data set of sounds to experiment with different frequencies. Subsequently, through our mentioned electronics, we aim to transfer these sounds/vibrations to our output systems (Chladni plate...), allowing us to analogically visualize the patterns that are generated when using different materials (water, seeds...)
+
+The aim of this microchallenge is to go one step further than Microchallenge 1 by incorporating artificial intelligence into the frequency-pattern system with (machine learning) and also a first exploration of new inputs such as the frequencies or rhythms of the human body such as the heart rate. 
+
+The microchallenge 2 has two different parts, the first part is closing the loop between frequencies and patterns by training a recognition system with AI that is capable of given a pattern, assigning it a frequency.
+
+![Micro-Challenge 2 Coverage - Part 1](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/Loop1PlanningMC2.JPG)
+
+The second part consists of creating a sensor capable of counting heart rate and, through a mapping of values between a reference table of health states by heart rate, assigning it a frequency and analogically building a visual pattern like a new form of diagnosis.
+
+![Micro-Challenge 2 Coverage - Part 1](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/Loop2PlanningMC2.JPG)
 
 
-The objective for this microchallenge is to take Microchallenge 1 one step further (see microchallenge 1) by incorporating machine learning and exploration of additional inputs as human body frequencies.
-
-The first step was to fix the Chladni Plate that we built during Microchallenge 1 since it was not going well. Thanks to previous experience and especially past mistakes, we have completely rebuilt the Chladni Plate but this time much faster.
-
-
-Coverage of the second microchallenge in the global project:
-![Micro-Challenge 1 Coverage](/recursosMicrochallenge/images/Microchallenge1_flowchart.JPG)
+To be able to carry out everything planned for this challenge, the first step was to fix the Chladni Plate to improve performance. Thanks to previous experience and especially past mistakes, we have completely rebuilt the Chladni Plate but this time much faster.
 
 
 ### Planning
