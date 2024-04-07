@@ -33,82 +33,52 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 ## 3. The Chladni plate 2.0
 
+## 3.1. The plate parts
 
-## 3.1. Artifact elements 1: Inputs
+![The plate parts](recursosMicrochallenge2/images/Elements.PNG)
 
-Due to the time limitation to execute the project we have decided to focus on the outputs using our own inputs so we have left the data capture and the feedback system for another challenges.
+- Speaker: 30 watts 4 ohms from an old AXTECH electric guitar amplifier
+- Transmission cylinder printed in PLA 3D
+- M5 threaded rods, hexagonal nuts and washers for fixing the plywood guide.
+- Threaded rod guide, hexagonal nuts, O-rings and washers to fix the transmission cylinder with the plate.
+- The plate (aluminum or galvanized steel)
 
-After some tests with music and different type of sound we decided to download some pure frequencies and create tracks of 1 minute each. We used the https://onlinetonegenerator.com/ to create pure sine frequencies of the desired frequencies. 
-
-Since the tracks downloaded from onlinegenerator.com are 15 seconds long, we used the Audacity software to create 60-second tracks.
-
-![Working on inputs](/recursosMicrochallenge/images/generatingSoundTracks.png)
-
-After some tests with the balloon-speaker we added some low frequencies (10 Hz, 20 Hz, 40 Hz, and 50 Hz) tto those we had found in the bibliography for the squared Chladni plate paterns (68 Hz,80 Hz, 176 Hz, 250 Hz, 300 Hz), 382 Hz, 477 Hz, 735 Hz, 1071 Hz, 2250 Hz and 3258 Hz)
-
-[Download tracks](/recursosMicrochallenge/documents/InputFreq.zip)
-
-## 3.2. Inside Chladni Plate
-
-### Electronics for testing our input frequencies and send it to the vibration outputs
-
-For provide the sound/vibrations to our different outputs we have used a DF Player that is a module that provides a integrated MP3 player with a miniSD card
-
-![Our Circuit](/recursosMicrochallenge/images/electronics.JPG)
-
-![DFPlayer](/recursosMicrochallenge/images/DFPlayerMini_DataSheet.png)
-
-
-DF Player datasheet: [https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer Mini Manual.pdf](https://github.com/RalphBacon/MP3-Player-DFPlayer/blob/master/DFPlayer%20Mini%20Manual.pdf)
-
-The configuration we used the following diagram that works without any coding.
-
-#### The circuit
-![DFPlayer Circuit](/recursosMicrochallenge/images/DfPlayerCircuit.png)
-
-To facilitate testing, connections and disconnections of the different outputs, we soldered some 3.5 jacks to the output of the circuit and to the input of the speakers.
-
-![working on electronics](/recursosMicrochallenge/images/electronicscomp.JPG)
-
-## 3.3. Artifact elements 2: Outputs
-
-### Output 1: Chladni plate 2.0.
-
-![Chladni plate2]Image
-Fofo del nou Chladni Plate
-
-Files:
-- [Download plywood guide 2.0](/recursosMicrochallenge/documents/ChladniPlateMarkPlywoodBase.dxf)
-
-- [Download 3D transmission cylinder 2.0](/recursosMicrochallenge/documents/TransmissionCylinder.3dm)
+## 3.2. The electronic parts
 
 
 
-### Training a model using a Chladni plate patterns
 
 
 
-#### References:
-https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 
-## 4. Tools and materials:
+
+## 4. Training a model using a Chladni plate patterns
+
+Zenithal webcam assembly for training the frequency recognizer from patterns:
+
+![Teaching the machine](/recursosMicrochallenge2/images/TeachingMachine.JPG)
+
+
+
+## 5. Tools and materials:
 
 ### Software:
-
 - Rhino
 - Ultimaker Cura
 - Adobe Illustrator
 - Trotec sw
 - Audacity
-- Online Tone Generator
+- NCH Tone Generator (free trial)
 - Notion
 - Github
+- The teacheable machine
 
 ### Digital fabrication machines:
- Name | Use |
+
+| Name | Use |
 | --- | --- |
-| 3D printer Creality Ender-3 PRO | Transmission cylinder, Dr. Chladni electronics box |
-| CNC Milling machine | Plywood guide plate |
+| 3D printer Creality Ender-3 PRO | Transmission cylinder and  Dr. Chladni electronics box |
+| Raptor Milling machine | Plywood transmission guide |
 
 ### Power and hand tools:
 | Name | Use |
@@ -120,156 +90,51 @@ https://www.instructables.com/Laser-Pen-Sound-Visualiser/
 | Files, rasp, sanding paper | Wires |
 | Wrench | Ensamble chladni plate |
 
-![Workshop](/recursosMicrochallenge/images/FabLabWorkshop.png)
-
-### Materials:
-| Name | Use |
-| --- | --- |
-| PLA | Chladni plate |
-| Plywood 10mm | Chladni plate |
-| Acrylic 4mm | Chladni plate |
-| Threaded rod 5M | Chladni plate |
-| Screws, hex nuts, washers and o-rings 5M| Chladni plate |
-| Aluminiun sheet 1mm | Chladni plate |
-| Old speakers | Chladni plate, Speaker balloon, Laser visualitzer |
-| Balloons | Speaker balloon, Laser visualitzer |
-| Piece of mirrow | Laser visualitzer |
-| Rubber pads | Chladni plate |
-| Curcuma, salt, sugar, water, sea water | Materials for patterns over chladni plates or balloon |
-| Aluminium plates | Tests with water |
-| Wires, jumpers | Electronics vibration generator |
-| Tin | Tin soldering |
-| Black paint | Chladni plate |
-
-### Documenting tools:
-- Cell phone
-- Computer
-- Tablet
-- Humans
-
-### Electronic components:
-- DFPlayer mini - [Datasheet](https://picaxe.com/docs/spe033.pdf)
-- 2 buttons
-- Wires
-- 3,5 mm jacks males and females
-- Laser diode 650nm Adafruit - [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1130/1054_Web.pdf)
-
-
-### Provisional code:
-
-```
-//Define DFPlayer libraries
-#include "Arduino.h"
-#include <DFRobotDFPlayerMini.h>
-#include <SoftwareSerial.h>
-//SoftwareSerial mySerial(RX_PIN, TX_PIN);
-SoftwareSerial mySerial(10, 11);  // RX, TX
-
-
-// Create a SoftwareSerial object to communicate with the DFPlayer Mini
-
-// Create a DFRobotDFPlayerMini object to control the DFPlayer Mini
-DFRobotDFPlayerMini myDFPlayer;
-
-//Define DFPlayer libraries
-const int knockSensor = 1;  // the piezo is connected to analog pin 0
-const int threshold = 100;  // threshold value to decide when the detected sound is a knock or not
-int beat = 0;
-int ppm = 0;
-
-int startMillis;  //some global variables available anywhere in the program
-int currentMillis;
-const int period = 15000;  //the value is a number of milliseconds ()
-
-// these variables will change:
-int sensorReading = 0;  // variable to store the value read from the sensor pin
-
-void setup() {
-  //Serial.begin(9600);      // use the serial port
-  startMillis = millis();  //initial start time
-
-  // Initialize the DFPlayer Mini object
-  if (!myDFPlayer.begin(mySerial)) {
-    Serial.println(F("Unable to begin:"));
-    Serial.println(F("1.Please recheck the connection!"));
-    Serial.println(F("2.Please insert the SD card!"));
-    while (true)
-      ;
-  } else {
-    Serial.println(F("DFPlayer Mini online."));
-  }
-
-  // Set the volume (0 to 30)
-  myDFPlayer.volume(25);
-
-  // Play track 001 from the SD card
-  // myDFPlayer.play(1);
-}
-
-
-void loop() {
-
-  currentMillis = millis();
-  int timeElapsed = abs(currentMillis - startMillis);
-
-  if (timeElapsed <= period) {
-    // read the sensor and store it in the variable sensorReading:
-    sensorReading = analogRead(knockSensor);
-
-    // if the sensor reading is greater than the threshold:
-    if (sensorReading >= threshold) {
-      // send the string "Knock!" back to the computer, followed by newline
-      beat = beat + 1;
-      Serial.print("Total beat: ");
-      delay(100);
-      Serial.println(beat);
-    }
-    Serial.println(timeElapsed);
-    delay(100);  // delay to avoid overloading the serial port buffer}
-  } else {
-    ppm = beat * 4;
-    Serial.print("Pulsaciones por minuto: ");
-    Serial.println(ppm);
-
-    if (ppm < 60) {
-      myDFPlayer.play(1); // k = (100.mp3);
-    } else if ((ppm >= 60) && (ppm < 64)) {
-      myDFPlayer.play(2);  // = (200.mp3);
-    } else if ((ppm >= 64) && (ppm < 70)) {
-      myDFPlayer.play(3);  // =(350.mp3);
-    } else if ((ppm >= 70) && (ppm < 74)) {
-      myDFPlayer.play(4);  // = (430.mp3);
-    } else if ((ppm >= 74) && (ppm < 79)) {
-      myDFPlayer.play(5);  //= (460.mp3);
-    } else if ((ppm >= 79) && (ppm < 85)) {
-      myDFPlayer.play(6);  // = (490.mp3);
-    } else if ((ppm >= 85) && (ppm < 91)) {
-      myDFPlayer.play(7); //= (800.mp3);
-    } else if ((ppm >= 91) && (ppm < 100)) {
-      myDFPlayer.play(8); //= (1000.mp3);
-    } else if (ppm >= 100) {
-      myDFPlayer.play(9); //= (1300.mp3);
-    } else {
-      Serial.println("There is an error! Reset the system!");
-      //delay(150);
-    }
-  }
-  //Serial.println("Reset me to go again!");
-}
-```
+### Hardware:
+- Webcam
+- Personal computers
+- Cell phones
 
 
 ## 6. Iteration process
 
-We basically did the iterations during the Chladni Plate tests.
+We did several iterations of practically everything.
+
+For the structural and electronic elements of the plate we renewed several times all the elements that made up the system. From the speakers to the transmission parts and even the sound amplification system had been improved several times.
+
+
+#### Amplification system:
+
+| Iteration 1 | Iteration 2 | Iteration 3
+| --- | --- | ---|
+| ![Amplification iterarion 1](/recursosMicrochallenge2/images/AmpIteration1.png) | ![Amplification iterarion 2](recursosMicrochallenge2/images/AmpIteration2.png) | ![Amplification iterarion 3](/recursosMicrochallenge2/images/AmpIteration3.png) | 
+| DF Player Mini | DF Player Mini with an old guitar ampr | DF Player Mini and a digital amp board XH-M577 TPA3116D2 80x2W |
+| The DF player does not have enough power for our 30 watt speaker | The amp is very old and has all the potentiometers that fail and need to be repaired so the sound is scratchy and intermittent | The digital amp board gives us good performance |
+|  |  | |
+
+
+#### Plate material:
 
 At the level of materials, we test metal plates made of galvanized steel and aluminum of different sizes and thicknesses. Although for lower power systems it seems that the aluminum plates worked better, for our system the 32 x 32 cm galvanized steel plate was the one that gave us the best results.
 
-We also try different materials for drawing the pattern. The materials tested were: salt, bicarbonate powder, wood chips and fine sand painted green for decorative use. The material that worked best by far was fine sand. the
+#### Pattern material: 
+
+We also try different materials for drawing the pattern. The materials tested were: salt, baking soda powder, wood chips and fine sand painted green for decorative use. The material that worked best by far was fine sand. the
+
+![Pattern materials](recursosMicrochallenge2/images/PatternIterations.PNG)
+
+#### Input frequencies:
 
 Regarding the frequencies, we also carried out different tests to validate the optimal working range and vibration transmission of our system. For the final galvanized steel and sand plate configuration, the optimal ranges for pattern drawing were approximately 50 to 1500 Hz. It is observed that at certain low frequencies the system enters resonance and is unable to define the patterns well and quickly expels the materials out of the plate.
 
+#### Others:
+
 Other factors that were taken into account were the intensity of the sound (db) and the waiting time for the pattern to be drawn. Due to time constraints, the data regarding these aspects was not taken, but after various tests we defined the modus operandi starting at low volumes and gains for each frequency change and with a progressive increase without reaching very high plate resonance levels and leaving operate the system between 20 and 40 seconds.
+
+We soon discovered that for optimal operation it is very important to always have the plate well leveled.
+
+![Leveling the plate](recursosMicrochallenge2/images/LevelingPlate.PNG)
+
 
 ## 7. Applications. The performance
 
@@ -292,6 +157,7 @@ Other factors that were taken into account were the intensity of the sound (db) 
 - [Run Teacheable Machine model in an microcontroller](https://github.com/googlecreativelab/teachablemachine-community/blob/master/snippets/markdown/tiny_image/GettingStarted.md)
 
 - [Teacheable machine](https://teachablemachine.withgoogle.com/)
+
 
 ### Thanks to microchallenge supporting team and to the classemates!!!!!!!!!!
 
