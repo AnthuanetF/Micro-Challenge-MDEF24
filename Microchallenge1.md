@@ -329,6 +329,6 @@ After some experimentation, despite not obtaining optimal results, we come up wi
 
 
 
-### Thanks to microchallenge supporting team and to the classemates, especially Flora and Manuja for the annoying sounds!!!!!!!!!!
+### Thanks to microchallenge supporting team and to the classmates, especially Flora and Manuja for the annoying sounds!!!!!!!!!!
 
 

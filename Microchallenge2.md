@@ -40,6 +40,9 @@ To be able to carry out everything planned for this challenge, the first step wa
 - Speaker: 30 watts 4 ohms from an old AXTECH electric guitar amplifier
 - Transmission cylinder printed in PLA 3D
 - M5 threaded rods, hexagonal nuts and washers for fixing the plywood guide.
+- Plywood transmission guide.
+[Download dxf file](recursosMicrochallenge2/documents/PlywoodTransmissionGuide.dxf)
+
 - Threaded rod guide, hexagonal nuts, O-rings and washers to fix the transmission cylinder with the plate.
 - The plate (aluminum or galvanized steel)
 
@@ -150,9 +153,6 @@ We soon discovered that for optimal operation it is very important to always hav
 
 ![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
 
-
-
-
 ![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
 
 
@@ -164,15 +164,39 @@ We soon discovered that for optimal operation it is very important to always hav
 4. The mix between the variables of the human body and pattern diagnosis systems is a new field to explore that has been very well received. 
 
 
-## 9. References
+## 9. References and inspirations
+
+- [A simple and inexpensive optical technique to help students visualize mode shapes](https://www.researchgate.net/figure/Chladni-pattern-of-the-square-plate-shown-in-Fig-2-oscillating-at-the-same-frequency_fig1_221712242)
+
+- [Barduino pinout](https://fablabbcn-projects.gitlab.io/electronics/barduino-docs/GettingStarted/pinout/)
+
+- [Detect a knock with Arduino code](https://docs.arduino.cc/built-in-examples/sensors/Knock/)
 
 - [How to control your DFMini Player MP3 module with Arduino](https://www.dfrobot.com/blog-1462.html)
+
+- [How to use the DFMini Player MP3 Module with Arduino](https://www.dfrobot.com/blog-1462.html)
+
+- [Knock detection with a piezo sensor](https://youtu.be/1SNC3ib10_4?feature=shared)
+
+- [Machine learning articles](https://github.com/christianversloot/machine-learning-articles/blob/main/using-teachable-machine-for-creating-tensorflow-models.md)
+
+- [Modal analysis of plate to analyze the effect of mass stiffeners using the Chladni plate approach](https://www.sciencedirect.com/science/article/abs/pii/S2214785322061223)
+
+- [Modulo DFplayer mini Reproductor mp3 para arduino, tutorial completo](https://www.electroallweb.com/index.php/2020/07/22/modulo-dfplayer-mini-reproductor-mp3-tutorial-completo/amp/)
+
+- [Online tone generator](https://www.szynalski.com/tone-generator/)
+
+- [Point-driven modern Chladni figures with symmetry breaking](https://www.nature.com/articles/s41598-018-29244-6)
+
 
 - [Run Teacheable Machine model in an microcontroller](https://github.com/googlecreativelab/teachablemachine-community/blob/master/snippets/markdown/tiny_image/GettingStarted.md)
 
 - [Teacheable machine](https://teachablemachine.withgoogle.com/)
 
+- [Tracing our digital actions through modern scribes](https://www.domesticstreamers.com/art-research/work/tracing-our-digital-actions-through-modern-scribes/)
 
-### Thanks to microchallenge supporting team and to the classemates!!!!!!!!!!
+- [Using millis() for timing. A beginners guide](https://forum.arduino.cc/t/using-millis-for-timing-a-beginners-guide/483573)
+
+## Thanks to microchallenge supporting team and to the classmates!!!!!!!!!!
 
 
