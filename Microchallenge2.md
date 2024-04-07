@@ -54,9 +54,19 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 ## 4. Training a model using a Chladni plate patterns
 
+To train a model we used a webcam connected to a https://teachablemachine.withgoogle.com/models/1Ci8Ej72D/
+
+We recorded various images for each frequency tested, with different metal plates, materials and lighting conditions. Later we clean and unify the classes. Leaving 9 classes within the optimal operating range of the metal plate.
+
+
+
 Zenithal webcam assembly for training the frequency recognizer from patterns:
 
 ![Teaching the machine](/recursosMicrochallenge2/images/TeachingMachine.JPG)
+
+The results:
+![Teaching the machine](/recursosMicrochallenge2/images/TM_Model.JPG)
+
 
 
 
@@ -136,18 +146,22 @@ We soon discovered that for optimal operation it is very important to always hav
 ![Leveling the plate](recursosMicrochallenge2/images/LevelingPlate.PNG)
 
 
-## 7. Applications. The performance
+## 7. Diagnosis by patterns, practical application case.
 
-![The performance](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
+![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
 
 
-![The table](../Micro-Challenge-MDEF24/recursosMicrochallenge2/images/ClassesBPM.JPG)
+
+
+![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
 
 
 ## 8. Conclusions and new ideas
 
 1. This is just the beginning​!
-
+2. It is important not to have abandoned the project despite the results of the first microchallenge since the experience has provided us with a functional redesign in a very short time.
+3. The AI model, although simple, opens the doors for us to see how certain formations that we find in nature at various levels from macro to micro correspond more or less to certain frequencies.
+4. The mix between the variables of the human body and pattern diagnosis systems is a new field to explore that has been very well received. 
 
 
 ## 9. References
