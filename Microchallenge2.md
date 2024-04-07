@@ -57,10 +57,11 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 ## 4. Training a model using a Chladni plate patterns
 
-To train a model we used a webcam connected to a https://teachablemachine.withgoogle.com/models/1Ci8Ej72D/
+To train a model we used a webcam connected to a https://teachablemachine.withgoogle.com
+
+
 
 We recorded various images for each frequency tested, with different metal plates, materials and lighting conditions. Later we clean and unify the classes. Leaving 9 classes within the optimal operating range of the metal plate.
-
 
 
 Zenithal webcam assembly for training the frequency recognizer from patterns:
@@ -68,8 +69,17 @@ Zenithal webcam assembly for training the frequency recognizer from patterns:
 ![Teaching the machine](/recursosMicrochallenge2/images/TeachingMachine.JPG)
 
 The results:
+
+A a result we defined 9 classes of frequencies:
 ![Teaching the machine](/recursosMicrochallenge2/images/TM_Model.JPG)
 
+
+Afterwards we tested the model against other natural patterns to see how well it matched, but we didn't have time to explore that much.
+
+![Testing the model](/recursosMicrochallenge2/images/TestinTheModel.JPG)
+
+
+[Test our model with your patterns](https://teachablemachine.withgoogle.com/models/1Ci8Ej72D/)
 
 
 
