@@ -2,6 +2,7 @@
 *By [Anthuanet Falcon](https://anthuanetf.github.io/MDEF/) & [Albert Vila](https://avilabon.github.io/MDEF_Albert/)* :)
 
 # Microchallenge 2: Dr. Chladni
+![Assembling Dr. Chladni](recursosMicrochallenge2/images/TestingComponents.JPG)
 
 ## 1. Introduction 
 
@@ -51,9 +52,13 @@ We call Dr. Chladni to the system composed of the Chladni Plate itself, the piez
 
 ## 3.2. The piezo sensor
 
+The support team challenged us to build a heart rate sensor from a piezo so we tried that. It should be said that it works more or less since it is very sensitive.
 
+![Testing piezo](recursosMicrochallenge2/images/TestingPiezo.JPG)
 
 ## 3.3. The controlling box
+
+![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
 
 ![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
 
@@ -72,9 +77,9 @@ This 3d printed box contains all the electronic parts used to control of the sys
 To train a model we used a webcam connected to a https://teachablemachine.withgoogle.com
 
 
+![Training](/recursosMicrochallenge2/images/Trainning.JPG)
 
 We recorded various images for each frequency tested, with different metal plates, materials and lighting conditions. Later we clean and unify the classes. Leaving 9 classes within the optimal operating range of the metal plate.
-
 
 Zenithal webcam assembly for training the frequency recognizer from patterns:
 
@@ -93,9 +98,18 @@ Afterwards we tested the model against other natural patterns to see how well it
 
 [Test our model with your patterns](https://teachablemachine.withgoogle.com/models/1Ci8Ej72D/)
 
+## 5. Diagnosis by patterns, practical application case.
 
 
-## 5. Tools and materials:
+![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
+
+The mapping between frequencies-patterns and heart rates.
+![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
+
+The first victim during the presentation.
+![the first victim](/recursosMicrochallenge2/images/FirstVictim.JPG)
+
+## 6. Tools and materials:
 
 ### Software:
 - Rhino
@@ -130,13 +144,11 @@ Afterwards we tested the model against other natural patterns to see how well it
 - Personal computers
 - Cell phones
 
-
-## 6. Iteration process
+## 7. Iteration process
 
 We did several iterations of practically everything.
 
 For the structural and electronic elements of the plate we renewed several times all the elements that made up the system. From the speakers to the transmission parts and even the sound amplification system had been improved several times.
-
 
 #### Amplification system:
 
@@ -145,8 +157,6 @@ For the structural and electronic elements of the plate we renewed several times
 | ![Amplification iterarion 1](/recursosMicrochallenge2/images/AmpIteration1.png) | ![Amplification iterarion 2](recursosMicrochallenge2/images/AmpIteration2.png) | ![Amplification iterarion 3](/recursosMicrochallenge2/images/AmpIteration3.png) | 
 | DF Player Mini | DF Player Mini with an old guitar ampr | DF Player Mini and a digital amp board XH-M577 TPA3116D2 80x2W |
 | The DF player does not have enough power for our 30 watt speaker | The amp is very old and has all the potentiometers that fail and need to be repaired so the sound is scratchy and intermittent | The digital amp board gives us good performance |
-|  |  | |
-
 
 #### Plate material:
 
@@ -169,18 +179,6 @@ Other factors that were taken into account were the intensity of the sound (db) 
 We soon discovered that for optimal operation it is very important to always have the plate well leveled.
 
 ![Leveling the plate](recursosMicrochallenge2/images/LevelingPlate.PNG)
-
-
-## 7. Diagnosis by patterns, practical application case.
-
-
-![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
-
-
-![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
-
-
-
 
 ## 8. Conclusions and new ideas
 
