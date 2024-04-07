@@ -151,9 +151,13 @@ We soon discovered that for optimal operation it is very important to always hav
 
 ## 7. Diagnosis by patterns, practical application case.
 
+
 ![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
 
+
 ![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
+
+
 
 
 ## 8. Conclusions and new ideas
