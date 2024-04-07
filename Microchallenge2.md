@@ -45,7 +45,6 @@ We call Dr. Chladni to the system composed of the Chladni Plate itself, the piez
 - M5 threaded rods, hexagonal nuts and washers for fixing the plywood guide.
 - Plywood transmission guide.
 [Download dxf file](recursosMicrochallenge2/documents/PlywoodTransmissionGuide.dxf)
-
 - Threaded rod guide, hexagonal nuts, O-rings and washers to fix the transmission cylinder with the plate.
 - The plate (aluminum or galvanized steel)
 
@@ -60,17 +59,9 @@ The support team challenged us to build a heart rate sensor from a piezo so we t
 
 ![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
 
-![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
-
 This 3d printed box contains all the electronic parts used to control of the system.
 
 ![The Dr Chladni Box Inside](recursosMicrochallenge2/images/DrChadniBoxInside.JPG)
-
-
-
-
-
-
 
 ## 4. Training a model using a Chladni plate patterns
 
@@ -100,14 +91,17 @@ Afterwards we tested the model against other natural patterns to see how well it
 
 ## 5. Diagnosis by patterns, practical application case.
 
-
 ![The performance](/recursosMicrochallenge2/images/DesignDialogII_DrChladniPerformance.JPG)
 
 The mapping between frequencies-patterns and heart rates.
 ![The table](/recursosMicrochallenge2/images/ClassesBPM.JPG)
 
-The first victim during the presentation.
-![the first victim](/recursosMicrochallenge2/images/FirstVictim.JPG)
+The first victim during the presentation:
+![the first victim at class presentation](/recursosMicrochallenge2/images/FirstVictim.JPG)
+
+Dr. Chladni at Design Dialogs 2:
+![Dr. Chladni installation during Design Dialogs 2](/recursosMicrochallenge2/images/DrChladniDD2.JPG)
+
 
 ## 6. Tools and materials:
 
