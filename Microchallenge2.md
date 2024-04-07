@@ -31,9 +31,11 @@ To be able to carry out everything planned for this challenge, the first step wa
 
 
 
-## 3. The Chladni plate 2.0
+## 3. Dr. Chladni
 
-## 3.1. The plate parts
+We call Dr. Chladni to the system composed of the Chladni Plate itself, the piezo sensor for estimating heart rate and all the electronics used to control the entire system.
+
+## 3.1. The Chladni plate 2.0 (parts)
 
 ![The plate parts](recursosMicrochallenge2/images/Elements.PNG)
 
@@ -46,8 +48,18 @@ To be able to carry out everything planned for this challenge, the first step wa
 - Threaded rod guide, hexagonal nuts, O-rings and washers to fix the transmission cylinder with the plate.
 - The plate (aluminum or galvanized steel)
 
-## 3.2. The electronic parts
 
+## 3.2. The piezo sensor
+
+
+
+## 3.3. The controlling box
+
+![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
+
+This 3d printed box contains all the electronic parts used to control of the system.
+
+![The Dr Chladni Box Inside](recursosMicrochallenge2/images/DrChadniBoxInside.JPG)
 
 
 
