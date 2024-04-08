@@ -23,14 +23,10 @@ The second part consists of creating a sensor capable of counting heart rate and
 
 ![Micro-Challenge 2 Coverage - Part 1](/recursosMicrochallenge2/images/Loop2PlanningMC2.JPG)
 
-
 To be able to carry out everything planned for this challenge, the first step was to fix the Chladni Plate to improve performance. Thanks to previous experience and especially past mistakes, we have completely rebuilt the Chladni Plate but this time much faster.
-
 
 ### Planning
 ![Planning](/recursosMicrochallenge2/images/Planning.JPG)
-
-
 
 ## 3. Dr. Chladni
 
@@ -53,15 +49,135 @@ We call Dr. Chladni to the system composed of the Chladni Plate itself, the piez
 
 The support team challenged us to build a heart rate sensor from a piezo so we tried that. It should be said that it works more or less since it is very sensitive.
 
+| The piezo | Operation | Theory|
+| --- | --- | --- |
+| ![The piezo sensor](recursosMicrochallenge2/images/PiezoSensor.JPG) | ![Operation principles](recursosMicrochallenge2/images/SchemaPiezo.gif) |A piezoelectric sensor is a device that uses the piezoelectric effect to measure changes in pressure, acceleration, temperature, strain, or force by converting them to an electrical charge... [Learn more](https://en.wikipedia.org/wiki/Piezoelectric_sensor)|
+
 ![Testing piezo](recursosMicrochallenge2/images/TestingPiezo.JPG)
 
-## 3.3. The controlling box
 
-![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
+
+## 3.3. The controlling box and code
 
 This 3d printed box contains all the electronic parts used to control of the system.
 
+![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
+
+### Inside the box:
 ![The Dr Chladni Box Inside](recursosMicrochallenge2/images/DrChadniBoxInside.JPG)
+
+### The code
+
+This is the code to count the beats of the piezoelectric sensor for 15 seconds, obtain the value of beats per minute and launch a track to the mp3 player that is connected to the amplifier which in turn is connected to the Chladni plate. The ranges of beats per minute values are mapped to specific frequency values to give a diagnosis of health status by pattern.
+
+This code is the union of two codes that worked well separately but contains some errors resulting from the union and would have to be debugged.
+
+
+```
+//Define DFPlayer libraries
+#include "Arduino.h"
+#include <DFRobotDFPlayerMini.h>
+#include <SoftwareSerial.h>
+
+// Create a SoftwareSerial object to communicate with the DFPlayer Mini
+SoftwareSerial mySerial(10, 11);  // RX, TX
+
+// Create a DFRobotDFPlayerMini object to control the DFPlayer Mini
+DFRobotDFPlayerMini myDFPlayer;
+
+// Define variables for the piezo sensor
+const int knockSensor = 1;
+
+// threshold value to decide when the detected sound is a knock or not
+const int threshold = 100; 
+
+// Reset beat and beats per minute variables
+int beat = 0;
+int ppm = 0;
+
+// To start count 15seconds 15000 milliseconds
+int startMillis;
+int currentMillis;
+const int period = 15000;
+
+// these variables will change:
+int sensorReading = 0;  // variable to store the value read from the sensor pin
+
+void setup() {
+  //Serial.begin(9600);      // use the serial port
+  startMillis = millis();  //initial start time
+
+  // Initialize the DFPlayer Mini object
+  if (!myDFPlayer.begin(mySerial)) {
+    Serial.println(F("Unable to begin:"));
+    Serial.println(F("1.Please recheck the connection!"));
+    Serial.println(F("2.Please insert the SD card!"));
+    while (true)
+      ;
+  } else {
+    Serial.println(F("DFPlayer Mini online."));
+  }
+
+  // Set the volume (0 to 30)
+  myDFPlayer.volume(25);
+
+  // Play track 001 from the SD card
+  // myDFPlayer.play(1);
+}
+
+
+void loop() {
+
+  currentMillis = millis();
+  int timeElapsed = abs(currentMillis - startMillis);
+
+  if (timeElapsed <= period) {
+    // read the sensor and store it in the variable sensorReading:
+    sensorReading = analogRead(knockSensor);
+
+    // if the sensor reading is greater than the threshold:
+    if (sensorReading >= threshold) {
+      // send the string "Knock!" back to the computer, followed by newline
+      beat = beat + 1;
+      Serial.print("Total beat: ");
+      delay(100);
+      Serial.println(beat);
+    }
+    Serial.println(timeElapsed);
+    delay(100);  // delay to avoid overloading the serial port buffer}
+  } else {
+    ppm = beat * 4; // multiply per 4 to obtain beats per minute
+    Serial.print("Pulsaciones por minuto: ");
+    Serial.println(ppm);
+
+// Depending on ppm value, launch a track to activate the mp3 player
+
+    if (ppm < 60) {
+      myDFPlayer.play(1); // k = (100.mp3);
+    } else if ((ppm >= 60) && (ppm < 64)) {
+      myDFPlayer.play(2);  // = (200.mp3);
+    } else if ((ppm >= 64) && (ppm < 70)) {
+      myDFPlayer.play(3);  // =(350.mp3);
+    } else if ((ppm >= 70) && (ppm < 74)) {
+      myDFPlayer.play(4);  // = (430.mp3);
+    } else if ((ppm >= 74) && (ppm < 79)) {
+      myDFPlayer.play(5);  //= (460.mp3);
+    } else if ((ppm >= 79) && (ppm < 85)) {
+      myDFPlayer.play(6);  // = (490.mp3);
+    } else if ((ppm >= 85) && (ppm < 91)) {
+      myDFPlayer.play(7); //= (800.mp3);
+    } else if ((ppm >= 91) && (ppm < 100)) {
+      myDFPlayer.play(8); //= (1000.mp3);
+    } else if (ppm >= 100) {
+      myDFPlayer.play(9); //= (1300.mp3);
+    } else {
+      Serial.println("There is an error! Reset the system!");
+      //delay(150);
+    }
+  }
+  //Serial.println("Reset me to go again!");
+}
+```
 
 ## 4. Training a model using a Chladni plate patterns
 
@@ -76,7 +192,7 @@ Zenithal webcam assembly for training the frequency recognizer from patterns:
 
 ![Teaching the machine](/recursosMicrochallenge2/images/TeachingMachine.JPG)
 
-The results:
+### The results
 
 A a result we defined 9 classes of frequencies:
 ![Teaching the machine](/recursosMicrochallenge2/images/TM_Model.JPG)
@@ -144,7 +260,7 @@ We did several iterations of practically everything.
 
 For the structural and electronic elements of the plate we renewed several times all the elements that made up the system. From the speakers to the transmission parts and even the sound amplification system had been improved several times.
 
-#### Amplification system:
+#### Amplification system
 
 | Iteration 1 | Iteration 2 | Iteration 3
 | --- | --- | ---|
@@ -152,21 +268,21 @@ For the structural and electronic elements of the plate we renewed several times
 | DF Player Mini | DF Player Mini with an old guitar ampr | DF Player Mini and a digital amp board XH-M577 TPA3116D2 80x2W |
 | The DF player does not have enough power for our 30 watt speaker | The amp is very old and has all the potentiometers that fail and need to be repaired so the sound is scratchy and intermittent | The digital amp board gives us good performance |
 
-#### Plate material:
+#### Plate material
 
 At the level of materials, we test metal plates made of galvanized steel and aluminum of different sizes and thicknesses. Although for lower power systems it seems that the aluminum plates worked better, for our system the 32 x 32 cm galvanized steel plate was the one that gave us the best results.
 
-#### Pattern material: 
+#### Pattern material
 
 We also try different materials for drawing the pattern. The materials tested were: salt, baking soda powder, wood chips and fine sand painted green for decorative use. The material that worked best by far was fine sand. the
 
 ![Pattern materials](recursosMicrochallenge2/images/PatternIterations.PNG)
 
-#### Input frequencies:
+#### Input frequencies
 
 Regarding the frequencies, we also carried out different tests to validate the optimal working range and vibration transmission of our system. For the final galvanized steel and sand plate configuration, the optimal ranges for pattern drawing were approximately 50 to 1500 Hz. It is observed that at certain low frequencies the system enters resonance and is unable to define the patterns well and quickly expels the materials out of the plate.
 
-#### Others:
+#### Others
 
 Other factors that were taken into account were the intensity of the sound (db) and the waiting time for the pattern to be drawn. Due to time constraints, the data regarding these aspects was not taken, but after various tests we defined the modus operandi starting at low volumes and gains for each frequency change and with a progressive increase without reaching very high plate resonance levels and leaving operate the system between 20 and 40 seconds.
 
