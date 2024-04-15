@@ -63,6 +63,8 @@ This 3d printed box contains all the electronic parts used to control of the sys
 
 ![The Dr Chladni Box](recursosMicrochallenge2/images/DrChladniBox.png)
 
+[Download stl 3D model of the box](recursosMicrochallenge2/documents/PIEZA%20MAYOR_1ANT_ALBERT.stl)
+
 ### Inside the box:
 ![The Dr Chladni Box Inside](recursosMicrochallenge2/images/DrChadniBoxInside.JPG)
 
