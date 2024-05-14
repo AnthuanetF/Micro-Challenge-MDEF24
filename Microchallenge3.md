@@ -1,16 +1,24 @@
 #    Nature patterns: Secret Languages III
 *By [Anthuanet Falcon](https://anthuanetf.github.io/MDEF/) & [Albert Vila](https://avilabon.github.io/MDEF_Albert/)* :)
 
-# Microchallenge 3: Dr. Chladni
-![Initial diagram](recursosMicrochallenge3/images/DiagramaInicial.JPG)
+# Microchallenge 3: Planta Vibras
+Planta Vibras aims to create a decentralized sensory immersive experience through a day in the life of a plant.
+
+![Portrait](recursosMicrochallenge3/images/PlantaVibraPortada.JPG)
 
 ## 1. Introduction 
+Planta Vibras is an interactive installation that explores the decentralized sensory communication of plants and their ability to influence other bodies, including the human body. Inspired by the intelligent systems of plants, our project seeks to demonstrate how sensory data travels through your body, strengthening your sensory system and allowing you to interact with your environment through your 'Body Data'.
+In contrast to human sensory perception, which has been centralized in the head and has neglected the crucial role of the skin, Planta Vibras proposes an interactive intervention that fuses the 'Body Data' of the Calatea plant with the consciousness of the human body in the It was Anthropocene.
+
+![SettingUp](recursosMicrochallenge3/images/SettingUp.JPG)
+
+We collect humidity, light and conductivity data from the plant environment for 24 hours, supplemented by photographs every 30 seconds. This information is synthesized into a one-minute immersive experience, simulating the process of photosynthesis. Using a piece of electronics developed by us and connected to the body at specific points, mini motors simulate the internal path of the plant, vibrating at points of movement and internal activity.
+Planta Vibras aims to raise awareness about non-human intelligences and promote new languages ​​of interconnection that allow us to empower ourselves in a post-anthropocene perspective, collaborating with all species.
+
+## 2. Project structure and flow
 
 
-## 2. Our proposal for microchallenge 3
-
-The aim of this microchallenge is to 
-
+![Initial diagram](recursosMicrochallenge3/images/DiagramaInicial.JPG)
 ### Planning
 
 
