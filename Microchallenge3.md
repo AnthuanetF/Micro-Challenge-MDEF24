@@ -21,17 +21,24 @@ The initial goal proposed by the faculty for this microchallenge was:
 
 **Compose a meaningful interaction that uses data collected from an “INPUT” (body) and transforms it into another digital signal (OUPUT).**
 
-Our proposal uses a plant and its immediate environment as **body** and collects data from multiple sensors (soil moisture, temperature, light and image) as **INPUTS**. After a day, this data is processed together creating diferent categories of plant activity. These categories of activity are used to create different vibration flows of 6 small vibrating motors (**OUTPUT**) strategically located in a "human body" that receives these vibrations during 2 minutes (**INTERACTION**). To achieve a decentralized sensory experience, the vibrating motors are distributed throughout the body away from the brain. During these two minutes and to reduce the influence of sight or the senses close to the brain, a time-lapse video with different recording planes of the plant is projected with VR glasses.
-
 ![First sketch](recursosMicrochallenge3/images/First%20sketch.JPG)
+
+Our proposal uses a plant and its immediate environment as **body** and collects data from multiple sensors (soil moisture, temperature, light and image) as **INPUTS**. After a day, this data is processed together creating diferent categories of plant activity. These categories of activity are used to create different vibration flows of 6 small vibrating motors (**OUTPUT**) strategically located in a "human body" that receives these vibrations during 2 minutes (**INTERACTION**). To achieve a decentralized sensory experience, the vibrating motors are distributed throughout the body away from the brain. During these two minutes and to reduce the influence of sight or the senses close to the brain, a time-lapse video with different recording planes of the plant is projected with VR glasses.
 
 ![Initial diagram](recursosMicrochallenge3/images/DiagramaInicial.JPG)
 
+![Flowchart](recursosMicrochallenge3/images/Flow.JPG)
+
+
 ### Planning
 
-
+![Planning](recursosMicrochallenge3/images/Planning.JPG)
 
 ## 3. The inputs
+
+
+
+
 
 ### 3.1. The soil humidity
 
