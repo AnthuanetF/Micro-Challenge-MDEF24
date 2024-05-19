@@ -27,27 +27,32 @@ Our proposal uses a plant and its immediate environment as **body** and collects
 
 ![Initial diagram](recursosMicrochallenge3/images/DiagramaInicial.JPG)
 
+Initially, we planned the general diagram of systems and information flow of the artifact to adapt to the following scheme. In the end, due to a lack of time, the transfer of the information request from the exit system to the Max8, via WiFi, remained pending programming. Currently, the operating sequence of the 6 output motors based on the plant data is included in the board program.
+
 ![Flowchart](recursosMicrochallenge3/images/Flow.JPG)
 
 
 ### Planning
 
-The planning was adjusted each day based on the achievements and failures of the previous day.
+The planning was adjusted each day based on the achievements and failures of the previous days.
 ![Planning](recursosMicrochallenge3/images/Planning.JPG)
 
 
 ## 3. The inputs
 
-We tested with various sensors and multisensors. After several iterations we decided to use a soil moisture sensor from Keystudio and use the light and temperature sensors built-in the Barduino development board.
-
-Parrot's Flower Power multisensor (soil moisture, temperature, light, fertilizer level) was finally discarded due to the difficulty of managing its data as we wish. The main reason for discarding the 5TE multisensor (soil conductivity, soil moisture and temperature) was that we did not find a way to connect it satisfactorily to our development board.
+We tested various sensors and multisensors. After several iterations we decided to use a soil moisture sensor from Keystudio and use the light and temperature sensors built-in in the Barduino development board.
 
 ![Soil sensor iterations](recursosMicrochallenge3/images/soilsensors.JPG)
+Parrot's Flower Power multisensor (soil moisture, temperature, light, fertilizer level) was finally discarded due to the difficulty of managing its data as we wish. 
+
+The main reason for discarding the 5TE multisensor (soil conductivity, soil moisture and temperature) was that we did not find a way to connect it satisfactorily to our development board.
 
 ### 3.1. The soil humidity data
 
-The Keystudio Moisture Sensor is 
-![Keystudio Moisture Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensor.jpg)
+The connections to the board and the sensor code with the Arduino IDE are very simple. Once connected, we do several tests with different degrees of humidity to understand a little the values that the Serial returns and establish the ranges.
+
+![Keystudio Moisture Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensor.jpg){width=100px}
+
 
 [Key Studio Moisture Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
 )[Key Studio Moisture Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
