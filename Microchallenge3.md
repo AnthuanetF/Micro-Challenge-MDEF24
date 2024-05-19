@@ -40,7 +40,7 @@ The planning was adjusted each day based on the achievements and failures of the
 
 ## 3. The inputs
 
-We tested various sensors and multisensors. After several iterations we decided to use a soil moisture sensor from Keystudio and use the light and temperature sensors built-in in the Barduino development board.
+We tested various sensors and multisensors. After several iterations we decided to use a soil humidity sensor from Keystudio and use the light and temperature sensors built-in in the Barduino development board.
 
 ![Soil sensor iterations](recursosMicrochallenge3/images/soilsensors.JPG)
 Parrot's Flower Power multisensor (soil moisture, temperature, light, fertilizer level) was finally discarded due to the difficulty of managing its data as we wish. 
@@ -51,19 +51,17 @@ The main reason for discarding the 5TE multisensor (soil conductivity, soil mois
 
 The connections to the board and the sensor code with the Arduino IDE are very simple. Once connected, we do several tests with different degrees of humidity to understand a little the values that the Serial returns and establish the ranges.
 
-![Keystudio Moisture Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensor.jpg){width=100px}
-
-
-[Key Studio Moisture Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
+[Key Studio Humidity Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
 )[Key Studio Moisture Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
 )
 
-Basic connection
-![Keystudio Moisture Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensorBasicConnetion.jpg)
+The basic connections for the sensor is:
 
+![Keystudio Humidity Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensorBasicConnetion.jpg)
+
+The code we used was:
 ```
     /*
-    # Basi code for the moisture sensor
     # Connect the sensor to the A0(Analog 0) pin on the Arduino board
     */
     
@@ -77,6 +75,14 @@ Basic connection
     delay(100);
     }
 ```
+
+### 3.2. The light and the temperature
+
+
+The code
+
+### 3.3. The images
+
 
 ## 4. The processing
 
