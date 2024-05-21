@@ -257,55 +257,32 @@ An sample of the spreadshed:
 
 ## 5. The output
 
+![Experiencing Planta Vibras](recursosMicrochallenge3/images/ExperiencingPlantaVibra.JPG)
 
 
 
 ## 6. Tools and materials:
 
-### Software:
-- Rhino
-- Ultimaker Cura
-- Adobe Illustrator
-- Trotec sw
-- Audacity
-- NCH Tone Generator (free trial)
-- Notion
-- Github
-- The teacheable machine
-
-### Digital fabrication machines:
-
+ ### Power and hand tools:
 | Name | Use |
 | --- | --- |
-| 3D printer Creality Ender-3 PRO | Transmission cylinder and  Dr. Chladni electronics box |
-| Raptor Milling machine | Plywood transmission guide |
-
-### Power and hand tools:
-| Name | Use |
-| --- | --- |
-| Column drill and bits | Make holes in metal plates |
-| Miter machine | Plywood cutting |
-| Angle grinder | Polish metal burrs |
-| Soft solder |  |
+| Soft solder | Connections  |
 | Files, rasp, sanding paper | Wires |
-| Wrench | Ensamble chladni plate |
 
 ### Hardware:
-- Webcam
+- 2 Trail Cameras
 - Personal computers
-- Cell phones
+- Xiao ESP32S3 board
+- 2 Barduino ESP32S3 boards
+- Cables
+- 6 motors...
+- Electronic stuff...
 
-## 7. Iteration process
-
-
-
-## 8. Conclusions and new ideas
-
-1. 
-2. 
+## 7. Conclusions
 
 
-## 9. References and inspirations
+
+## 8. References
 
 - [NDVI with a conventional camera](https://www.unex.es/organizacion/servicios-universitarios/servicios/comunicacion/archivo/2021/mayo-de-2021/3-de-mayo-de-2021/una-tecnica-desarrollada-en-la-uex-permite-medir-la-actividad-fotosintetica-de-las-plantas-utilizando-una-camara-fotografica-convencional)
 
