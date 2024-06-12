@@ -59,6 +59,13 @@ The KY-015 (air humidity and temperature) was that we prioritized the measuremen
 
 Finally the photoresistor was discarded since the development board with Wi-Fi was the Barduino and already contained a photoresistor.
 
+We also use 3 cameras to try to capture the movements of the plant and the light variations in its environment. The cameras were arranged at different angles and were programmed with the time lapse function.
+
+This has been the final installation:
+
+![Inputs](recursosMicrochallenge3/images/M3_InputDataSystem.PNG)
+
+
 ### 3.1. The soil humidity data
 
 The connections to the board and the sensor code with the Arduino IDE are very simple. Once connected, we do several tests with different degrees of humidity to understand a little the values that the Serial returns and establish the ranges.
@@ -71,7 +78,7 @@ The basic connections for the sensor is:
 
 ![Keystudio Humidity Sensor](recursosMicrochallenge3/images/KeyStudioMoistureSensorBasicConnetion.jpg)
 
-The code we used was:
+The code we used to test the sensor range with an Arduino board was:
 ```
     /*
     # Connect the sensor to the A0(Analog 0) pin on the Arduino board
@@ -79,7 +86,7 @@ The code we used was:
     
     void setup(){
     
-    Serial.begin(57600);
+    Serial.begin(115200);
     } 
     void loop(){
     Serial.print("Moisture Sensor Value:");
@@ -87,14 +94,53 @@ The code we used was:
     delay(100);
     }
 ```
+![Testing humidity sensors](recursosMicrochallenge3/images/M3_TestingSensors0.PNG)
 
 ### 3.2. The light and the temperature
 
-The code
+The final code we used to capture the temperature and light from the Barduino sensors plus the external soil moisture sensor was:
 
+```
+#include <Temperature_LM75_Derived.h>
+TI_TMP102 temperature;
+
+void setup() {
+  Serial.begin(115200);
+  Wire.begin();
+}
+
+void loop() {
+  
+// Temperature from Barduino board
+  Serial.print("Temperature: ");
+  Serial.print(temperature.readTemperatureC());
+  Serial.println(" C");
+
+// Soil humidity from Keystudio moisture sensor
+  Serial.print("Moisture Sensor Value: ");
+  Serial.println(analogRead(7)); 
+
+// Light from Barduino board
+  Serial.print("The level of light is: ");
+  Serial.print(analogRead(3));
+  Serial.println();
+  delay(1000);
+
+}
+```
+![Testing sensors](recursosMicrochallenge3/images/M3_TestingSensors.PNG)
 
 ### 3.3. The images
 
+We used 3 cameras, 2 of them were commercial trail cameras with a time lapse function.
+
+The third camera was a Seeed Studio XIAO ESP32S3 Sense - 2.4GHz Wi-Fi, BLE 5.0, OV2640 camera sensor.
+
+![Testing sensors](recursosMicrochallenge3/images/Seeed%20Studio%20XIAO%20ESP32S3%20Sense.PNG)
+
+We used a code to store a photo every minute on the SD card was the following:
+
+[Download de code](recursosMicrochallenge3/code/XiaoCAMSD.zip)
 
 ## 4. The processing
 
@@ -249,10 +295,27 @@ void tokenStatusCallback(TokenInfo info){
 }
 ```
 
-Wa added a column called "Time" with the function EPOCHTODATE to convert Timestamp to DD/MM/YYYY HH:MM:SS format time. 
+Once in the spreadsheet, we added a column called "Time" with the function EPOCHTODATE to convert Timestamp to DD/MM/YYYY HH:MM:SS format time. In this way we transform the date into an understandable format.
+
 
 An sample of the spreadshed:
 ![Spreadsheet sample](recursosMicrochallenge3/images/Spreadsheet%20data%20collection.png)
+
+
+Based on the clustering of data collected, we reclassify each record value (Temp, Hum, Light) into into 3 different categories. 
+
+The categorical ranges and formulas used to create the different categories of each parameter were the following:
+
+```
+Temperature (L: Low, M: Meddium, H: High): 
+    fx=if(CELL<30;"L";if(CELL<33;"M";"H"))
+
+Soil humidity (D: Dry, M: Medium, W: wet)
+    fx=if(CELL<1900;"D";if(CELL<2030;"M";"W"))
+
+Light (N: Night, C: twilight or cloudy light, D: Day light)
+    fx=if(C2<100;"N";if(C2<4000;"C";"D"))
+```
 
 
 ## 5. The output
