@@ -132,15 +132,18 @@ void loop() {
 
 ### 3.3. The images
 
+![XiaoCam time lapse](recursosMicrochallenge3/images/XiaoCamTL-2.gif)
+
 We used 3 cameras, 2 of them were commercial trail cameras with a time lapse function.
 
 The third camera was a Seeed Studio XIAO ESP32S3 Sense - 2.4GHz Wi-Fi, BLE 5.0, OV2640 camera sensor.
 
-![Testing sensors](recursosMicrochallenge3/images/Seeed%20Studio%20XIAO%20ESP32S3%20Sense.PNG)
+![Xiao cam](recursosMicrochallenge3/images/Seeed%20Studio%20XIAO%20ESP32S3%20Sense.PNG)
 
 We used a code to store a photo every minute on the SD card was the following:
 
 [Download de code](recursosMicrochallenge3/code/XiaoCAMSD.zip)
+
 
 ## 4. The processing
 
@@ -302,7 +305,7 @@ An sample of the spreadshed:
 ![Spreadsheet sample](recursosMicrochallenge3/images/Spreadsheet%20data%20collection.png)
 
 
-Based on the clustering of data collected, we reclassify each record value (Temp, Hum, Light) into into 3 different categories. 
+Based on the clustering of data collected, we reclassify each record parameter (Temp, Hum, Light) into into 3 different categories. 
 
 The categorical ranges and formulas used to create the different categories of each parameter were the following:
 
@@ -317,29 +320,28 @@ Light (N: Night, C: twilight or cloudy light, D: Day light)
     fx=if(C2<100;"N";if(C2<4000;"C";"D"))
 ```
 
-
 ## 5. The output
 
 ![Experiencing Planta Vibras](recursosMicrochallenge3/images/ExperiencingPlantaVibra.JPG)
+
+The output has consisted of an immersive experience. On the one hand, the sense of vision was focused with the projection of a video with different shots of the plant throughout a day. VR glasses have been used to be able to abstract from the environment. On the other hand, a vibrational experience was developed through 6 different points of the body where the frequency (on/off) of the vibrations and the sequence of operation were based on the different categories taken by the sensors that monitored the plant for an entire day.
+
+The coding of the operation of the motors was done manually, interpreting the data from the modes that were created with the categories of the different values ​​(see Processing section). In the future, we would like to automate it. Likewise, the code can also be further optimized.
+
+
+![Output assembling](recursosMicrochallenge3/images/M3_output.PNG)
 
 
 
 ## 6. Tools and materials:
 
- ### Power and hand tools:
-| Name | Use |
-| --- | --- |
-| Soft solder | Connections  |
-| Files, rasp, sanding paper | Wires |
-
-### Hardware:
+ ### Hardware:
 - 2 Trail Cameras
 - Personal computers
-- Xiao ESP32S3 board
-- 2 Barduino ESP32S3 boards
-- Cables
-- 6 motors...
-- Electronic stuff...
+- Xiao ESP32S3 board and Cam
+- 2 Barduino ESP32S3 boards (input and output)
+- 6 motors
+- Electronic stuff (wires...)
 
 ## 7. Conclusions
 
@@ -351,6 +353,10 @@ Light (N: Night, C: twilight or cloudy light, D: Day light)
 
 - [Key Studio Moisture Sensor Datasheet](https://wiki.keyestudio.com/Ks0049_keyestudio_Soil_Humidity_Sensor
 )
+
+- https://www.youtube.com/watch?v=3hoBwa0ccys
+
+
 ## Thanks to microchallenge supporting team and to the classmates!!!!!!!!!!
 
 
