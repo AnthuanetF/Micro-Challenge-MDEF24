@@ -326,11 +326,153 @@ Light (N: Night, C: twilight or cloudy light, D: Day light)
 
 The output has consisted of an immersive experience. On the one hand, the sense of vision was focused with the projection of a video with different shots of the plant throughout a day. VR glasses have been used to be able to abstract from the environment. On the other hand, a vibrational experience was developed through 6 different points of the body where the frequency (on/off) of the vibrations and the sequence of operation were based on the different categories taken by the sensors that monitored the plant for an entire day.
 
-The coding of the operation of the motors was done manually, interpreting the data from the modes that were created with the categories of the different values ​​(see Processing section). In the future, we would like to automate it. Likewise, the code can also be further optimized.
+The operation code of the vibration motors was done manually, interpreting the data from the modes that were created with the categories of the different values ​​(see Processing section). In the future, we would like to automate it. Likewise, the code can also be further optimized. 
 
+![Output circuit](recursosMicrochallenge3/images/M3_outputCircuit.PNG)
 
+The only difference with the schematic is that we used a Barduino instead of an Arduino.
+
+![Output circuit schematic view](recursosMicrochallenge3/images/M3_outputCircuitSchematicView.PNG)
+
+The wiring was not easy due to the large number of cable.
 ![Output assembling](recursosMicrochallenge3/images/M3_output.PNG)
 
+The code: 
+
+```
+#define inPin1 2
+#define inPin2 3
+#define inPin3 4
+#define inPin4 5
+#define inPin5 6
+#define inPin6 7
+
+
+void setup()
+{  
+  pinMode(inPin1, OUTPUT);
+  pinMode(inPin2, OUTPUT);
+  pinMode(inPin3, OUTPUT);
+  pinMode(inPin4, OUTPUT);
+  pinMode(inPin5, OUTPUT);
+  pinMode(inPin6, OUTPUT);
+}
+
+void Apagar(){
+ digitalWrite(inPin1, LOW);
+ digitalWrite(inPin2, LOW);
+ digitalWrite(inPin3, LOW);
+ digitalWrite(inPin4, LOW);
+ digitalWrite(inPin5, LOW);
+ digitalWrite(inPin6, LOW);
+ delay (100);
+}
+
+
+void case0(){
+for(int i = 1; i<6; i++){
+  digitalWrite(inPin6, HIGH);
+  delay(1000);
+  Apagar();
+  delay(1000);
+  }
+}
+
+void case1(){
+for(int i = 1; i<4; i++){
+  Apagar();
+  digitalWrite(inPin1, HIGH);
+  delay(1000);
+  Apagar();
+  delay(1000);
+  digitalWrite(inPin2, HIGH);
+  delay(1000);
+  Apagar();
+  }
+for(int i = 1; i<6; i++){
+  Apagar();
+  digitalWrite(inPin1, HIGH);
+  digitalWrite(inPin3, HIGH);
+  delay(1000);
+  Apagar();
+  digitalWrite(inPin2, HIGH);
+  digitalWrite(inPin4, HIGH);
+  delay(1000);
+  }
+}
+
+void case2(){
+  for(int i = 1; i<3; i++){
+    for(int i = 1; i<2; i++){
+      Apagar();
+      digitalWrite(inPin3, HIGH);
+      delay(1000);
+      Apagar();
+      digitalWrite(inPin4, HIGH);
+      delay(1000);
+    }
+    for(int i = 1; i<2; i++){
+        Apagar();
+        digitalWrite(inPin2, HIGH);
+        digitalWrite(inPin1, HIGH);
+        delay(1000);
+        Apagar();
+        delay(1000);
+      }
+    Apagar();
+    digitalWrite(inPin5, HIGH);
+    delay(1000);
+    Apagar();
+    delay(1000);
+  }
+}
+
+void case3(){
+ for(int i = 1; i<3; i++){
+      Apagar();
+      digitalWrite(inPin1, HIGH);
+      delay(1000);
+      Apagar();
+      digitalWrite(inPin6, HIGH);
+      delay(1000);
+      Apagar();
+      digitalWrite(inPin5, HIGH);
+      delay(1000);
+  }
+  for(int i = 1; i<3; i++){
+      Apagar();
+      digitalWrite(inPin5, HIGH);
+      delay(1000);
+      Apagar();
+      delay(1000);
+  }
+}
+
+void loop()
+{
+
+case0();
+Apagar();
+delay(5000);
+
+case1();
+Apagar();
+delay(5000);
+
+case2();
+Apagar();
+delay(5000);
+
+case3();
+Apagar();
+delay(5000);
+
+}
+```
+
+The distribution of the motors throughout the body of the person who is going to feel the interaction is not random since the vibration sequence is predesigned to activate the different parts of the body, emulating, speculatively, the activity of the plant.
+
+![Vibration motors ](recursosMicrochallenge3/images/M3_VibrationMotorsPosition.PNG)
 
 
 ## 6. Tools and materials:
@@ -345,6 +487,13 @@ The coding of the operation of the motors was done manually, interpreting the da
 
 ## 7. Conclusions
 
+- This time we almost didn't finish the output. We wasted a lot of time on most decisions. It is not easy to know when to continue down a path and when it is better to look for an alternative solution. We spent one day with sensors that didn't work well and two days deciding and testing possible outputs.
+
+- However, we are happy because we were able to experience new things that interested us both, such as the camera and the Xiao, sending data from the sensors to the cloud, playing with the vibrating motors among many other things.
+
+- The synchronization of the video of the plant, its activity and the vibrational experience that we receive can still be greatly improved, but it opens up a path of interaction between non-human and human entities that will be very interesting to continue exploring in the future.
+
+- The people who tried the experience gave us very positive feedback so at least we have contributed to transmitting good vibes. Quite an achievement!
 
 
 ## 8. References
